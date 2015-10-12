@@ -8,8 +8,8 @@ import java.util.ListIterator;
  */
 public class Alumno extends Usuario {
 
-    //para la próxima entrega, esta asignacio
-    List<HistorialAcademico> historialAcademicos= new List<HistorialAcademico>() {
+    //para la próxima entrega, esta asignacion
+    public List<HistorialAcademico> historialesAcademicos= new List<HistorialAcademico>() {
         @Override
         public int size() {
             return 0;
@@ -136,7 +136,12 @@ public class Alumno extends Usuario {
         }
     } ;
 
-    HistorialAcademico crearHistorial(Malla malla){
-        return new HistorialAcademico();
+    public void crearHistorial(Malla malla){
+        historialesAcademicos.add(new HistorialAcademico(malla));
+    }
+
+    public boolean registrarse(String user,String pass){
+        //**insertar metodo de validacion**
+        return true;
     }
 }

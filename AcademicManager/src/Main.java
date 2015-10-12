@@ -12,10 +12,17 @@ public class Main {
 		 */
 
 		/*
-		Hay 2 casos de uso que pueden ser probados:
-			1. Como alumno, crear un historial y agregar semestres, para poder hacer una comparacion con la malla asignada
-				*el resultado de esto seria ver el avance curricular (como en el siding)
-			2. Como admin, poder crear distintas entidades
+		ACLARACIONES:
+			1. El avance curricular NO es una entidad, es el display grafico de la informacion obtenida de
+			comparar los semestres que posee un historial con su malla asignada. El resultado de esto seria
+			algo parecido a lo que muestra el SidIng
+			2. Muchos metodos tienen tipo de retorno boolean por si el metodo llega a fallar
+
+		 */
+
+		/*
+		CAMBIOS RESPECTO AL DIAGRAMA DE CLASES ACTUAL:
+			1. en HistorialAcademico se agrega el metodo obtenerAvance() para mostrar el avance curricular
 		 */
 
 	}
