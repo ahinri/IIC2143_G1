@@ -7,9 +7,11 @@ public class Malla {
 		this.nombre=nombre
 	
 	}
-	
 	public void agregar_ramos(Ramo r){
 		ramos.add()
+	}
+	public void sacar_ramo(Ramo r){
+		ramos.remove(r)
 	}
 
 }
