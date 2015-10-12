@@ -142,4 +142,15 @@ public class HistorialAcademico {
         }
 
     }
+    
+    
+    public void avance(){
+    	for (Semestre s : semestres){
+    		System.out.println(s);
+    		
+    	}
+    	
+    	
+    	
+    }
 }
