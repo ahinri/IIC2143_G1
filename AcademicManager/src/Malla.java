@@ -8,8 +8,8 @@ public class Malla {
 	
 	}
 	
-	public void agregar_ramos(Semestre s){
-		ramos.add(s)
+	public void agregar_ramos(Ramo r){
+		ramos.add()
 	}
 
 }
