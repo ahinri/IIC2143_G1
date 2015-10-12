@@ -2,7 +2,7 @@
  * Created by ahinri on 11-10-2015.
  */
 public class Malla {
-	ramos=List
+	List<Ramo> ramos=new List<Ramo>()
 	public Malla(String nombre){
 		this.nombre=nombre
 	
