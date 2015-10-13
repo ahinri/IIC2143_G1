@@ -14,7 +14,14 @@ public class Alumno extends Usuario {
     }
 
     public boolean registrarse(String user,String pass){
-        //**insertar metodo de validacion**
-        return true;
+        List<String> usersRegistrados = new ArrayList<String>(); //en realidad estan guardados
+        List<String> passUsers = new ArrayList<String>(); //en realidad estan guardadas
+        if (!usersRegistrados.contains(user))
+        {
+        	usersRegistrados.add(user);
+        	passUsers.add(pass);
+        	return true;
+        }
+        return false;
     }
 }
