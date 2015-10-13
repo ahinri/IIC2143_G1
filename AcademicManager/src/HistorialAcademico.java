@@ -1,7 +1,4 @@
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 /**
  * Created by ahinri on 11-10-2015.
@@ -145,16 +142,17 @@ public class HistorialAcademico {
     
     
     public void avance(){
-    	List aux= new List();
-    	List hechos= new List();
-    	List faltan=new List();
+    	ArrayList<Ramo> aux= new ArrayList<>();
+        ArrayList<Ramo> hechos= new ArrayList<>();
+        ArrayList<Ramo> faltan=new ArrayList<>();
+
     	for (Semestre s : semestres){
-    		for( Ramo r :s){
+    		for( Ramo r :s.ramos){
     			aux.add(r);
-    		}	
+    		}
     	}
-    	for(Ramo x:this.malla){
-    		if (aux.contains(x){
+    	for(Ramo x:this.malla.ramos){
+    		if (aux.contains(x)){
     			hechos.add(x);
     			}
     		else{

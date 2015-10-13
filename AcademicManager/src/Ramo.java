@@ -25,7 +25,7 @@ public class Ramo {
 		this.num_semestre = num_semestre;
 		this.profesor = profesor;
 		this.descriptor = descriptor;
-		lista_alumnos = new ArrayList<Alumno>();
+		lista_alumnos = new ArrayList<>();
 	}
 	
 }
