@@ -3,7 +3,7 @@
  */
 public class Admin extends Usuario {
 	
-	public void crearMalla(String opcion)
+	public void crearMalla()
 	{
 		int max_creditos_semestre = 50; //cambiar a leer valor
 		String facultad = "Ingenieria"; //cambiar a leer valor
@@ -13,7 +13,7 @@ public class Admin extends Usuario {
 		//agregarla a un catalogo de mallas?
 	}
 	
-	public void crearRamo(Profesor p,DescriptorRamo d)
+	public void crearRamo(Profesor p,DescriptorRamo d) //en realidad se van a seleccionar
 	{
 		String horario = "L3"; //cambiar a leer valor
 		String sala = "A1"; //cambiar a leer valor
@@ -25,6 +25,25 @@ public class Admin extends Usuario {
 		DescriptorRamo descriptor=d; //cambiar a seleccionar descriptor
 		Ramo nuevo = new Ramo(horario, sala, seccion, cupos, anio, num_semestre, profesor, descriptor);
 		//agregarlo a un catalogo de ramos?
+	}
+	
+	public void editarMalla(Malla m)
+	{
+		m.max_creditos_semestre = 60; //cambiar a leer valor
+		m.facultad = "Psicologia"; //cambiar a leer valor
+		m.max_ramos_reprobados = 12; //cambiar a leer valor
+	}
+	
+	public void editarRamo(Ramo r, Profesor p,DescriptorRamo d) //en realidad se van a seleccionar
+	{
+		r.horario = "M3"; //cambiar a leer valor
+		r.sala = "B25"; //cambiar a leer valor
+		r.seccion = 2; //cambiar a leer valor
+		r.cupos = 70; //cambiar a leer valor
+		r.anio = 2017; //cambiar a leer valor
+		r.num_semestre = 2; //cambiar a leer valor
+		r.profesor = p; //cambiar a seleccionar valor
+		r.descriptor = d; //cambiar a seleccionar valor
 	}
     
 }

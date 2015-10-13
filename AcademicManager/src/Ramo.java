@@ -5,15 +5,15 @@ import java.util.*;
  */
 public class Ramo {
 
-	private String horario;
-	private String sala;
-	private int seccion;
-	private int cupos;
-	private int anio;
-	private int num_semestre;
-	private Profesor profesor;
-	private DescriptorRamo descriptor;
-	private List<Alumno> lista_alumnos;
+	public String horario;
+	public String sala;
+	public int seccion;
+	public int cupos;
+	public int anio;
+	public int num_semestre;
+	public Profesor profesor;
+	public DescriptorRamo descriptor;
+	public List<Alumno> lista_alumnos;
 
 	public Ramo(String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
