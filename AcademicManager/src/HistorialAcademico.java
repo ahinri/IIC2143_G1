@@ -147,19 +147,23 @@ public class HistorialAcademico {
     public void avance(){
     	List aux= new List();
     	List hechos= new List();
-    	List faltan=new List()
+    	List faltan=new List();
     	for (Semestre s : semestres){
     		for( Ramo r :s){
-    			aux.add(r)
+    			aux.add(r);
     		}	
     	}
     	for(Ramo x:this.malla){
-    		if (aux.contains(x){hechos.add(x)};
-    		else{faltan.add(x)}
+    		if (aux.contains(x){
+    			hechos.add(x);
+    			}
+    		else{
+    			faltan.add(x);
+    			}
     		
     	}
-    	System.out.println("Ramos avanzados: "+ hechos)
-    	System.out.println("Ramos que faltan: "+faltan)
+    	System.out.println("Ramos avanzados: "+ hechos);
+    	System.out.println("Ramos que faltan: "+faltan);
     	
     	
     	

@@ -4,13 +4,13 @@
 public class DescriptorRamo {
 	int creditos;
 	String programa;
-	List<Ramo> requisitos=new List<Ramos>()
+	List<Ramo> requisitos=new List<Ramos>();
 	public DescriptorRamo(String sigla){
-		this.sigla=sigla
+		this.sigla=sigla;
 	}
 	
 	public boolean agregarRequisitos(Ramo r){
-        requisitos.add(r)
+        requisitos.add(r);
     }
 	
 	
