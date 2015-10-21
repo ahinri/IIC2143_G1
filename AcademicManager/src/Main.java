@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
+        //https://github.com/IIC2233-2015-2/syllabus/wiki/Mac-OSX
 		ArrayList<DescriptorRamo> descriptores;
         ArrayList<Ramo> ramos;
         Connection c = null;
