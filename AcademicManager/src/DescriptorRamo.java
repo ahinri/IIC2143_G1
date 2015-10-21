@@ -3,12 +3,13 @@ import java.util.ArrayList;
 /**
  * Created by ahinri on 11-10-2015.
  */
+
 public class DescriptorRamo {
 	int creditos;
 	String programa, sigla;
 	ArrayList<Ramo> requisitos=new ArrayList<Ramo>();
 
-	public DescriptorRamo(String sigla){
+	public DescriptorRamo(String sigla,int creditos,String programa){
 		this.creditos=creditos;
         this.sigla=sigla;
         this.programa=programa;
@@ -18,6 +19,5 @@ public class DescriptorRamo {
         requisitos.add(r);
         return true;
     }
-	
-	
+
 }

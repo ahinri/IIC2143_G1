@@ -4,10 +4,14 @@ import java.util.*;
 /**
  * Created by ahinri on 11-10-2015.
  */
-public class Alumno extends Usuario {
+public class Alumno extends Usuario{
 
-    //para la próxima entrega, esta asignacion
+    //para la prï¿½xima entrega, esta asignacion
     public ArrayList<HistorialAcademico> historialesAcademicos= new ArrayList<HistorialAcademico>();
+
+    public Alumno(String nombre, int edad, String sexo, String rut) {
+        super(nombre, edad, sexo, rut);
+    }
 
     public void crearHistorial(Malla malla){
         historialesAcademicos.add(new HistorialAcademico(malla));

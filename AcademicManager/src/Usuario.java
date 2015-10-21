@@ -9,6 +9,13 @@ public class Usuario {
     String sexo;
     String rut;
 
+    public Usuario(String nombre,int edad,String sexo,String rut){
+        this.nombre=nombre;
+        this.edad=edad;
+        this.sexo=sexo;
+        this.rut=rut;
+    }
+
     public boolean LogIn(String user, String pass)
     {
     	List<String> usuariosRegistrados = new ArrayList<String>(); //en realidad esta guardada

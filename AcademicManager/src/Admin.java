@@ -2,7 +2,11 @@
  * Created by ahinri on 11-10-2015.
  */
 public class Admin extends Usuario {
-	
+
+	public Admin(String nombre, int edad, String sexo, String rut) {
+		super(nombre, edad, sexo, rut);
+	}
+
 	public void crearMalla()
 	{
 		int max_creditos_semestre = 50; //cambiar a leer valor
