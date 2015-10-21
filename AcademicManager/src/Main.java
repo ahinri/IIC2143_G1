@@ -5,31 +5,61 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
-        //https://github.com/IIC2233-2015-2/syllabus/wiki/Mac-OSX
-		ArrayList<DescriptorRamo> descriptores;
-        ArrayList<Ramo> ramos;
+		ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
+        ArrayList<Ramo> ramos=new ArrayList<Ramo>();
+        ArrayList<Profesor> profesores=new ArrayList<Profesor>();
         Connection c = null;
         java.sql.Statement statement1=null;
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:ing.db");
             statement1=c.createStatement();
-            String consulta1="select * from ramos;";
-            ResultSet rs=statement1.executeQuery(consulta1);
-            while (rs.next()){
-                int id=rs.getInt("id");
-                String horario=rs.getString("horario");
-                String sala=rs.getString("sala");
-                int seccion=rs.getInt("secion");
-                int cupos=rs.getInt("cupos");
-                int año=rs.getInt("año");
-                int semestre=rs.getInt("semestre");
-                int id_profesor=rs.getInt("id_profesor");
-                String id_alumnos=rs.getString("alumnos");
+
+            //Descriptores
+            String consulta_descriptores="select * from descriptores";
+            ResultSet rs_descriptores=statement1.executeQuery(consulta_descriptores);
+
+            while (rs_descriptores.next()){
+                String sigla_descriptor= rs_descriptores.getString("sigla");
+                int creditos_descriptor=rs_descriptores.getInt("creditos");
+                String programa_descriptor=rs_descriptores.getString("programa");
+                int id_descriptor=rs_descriptores.getInt("id_ramo");
+                descriptores.add(new DescriptorRamo(sigla_descriptor,creditos_descriptor,programa_descriptor,id_descriptor));
+            }
+
+            //Profesores
+
+            String consulta_profesores="select * from usuarios where tipo='profesor'";
+            ResultSet rs_profesores=statement1.executeQuery(consulta_profesores);
+            while (rs_profesores.next()) {
+                String nombre=rs_profesores.getString("nombre");
+                int edad=rs_profesores.getInt("edad");
+                String sexo=rs_profesores.getString("sexo");
+                String rut=rs_profesores.getString("rut");
+                int id_usuario=rs_profesores.getInt("id_usuario");
+                String username=rs_profesores.getString("username");
+                String clave=rs_profesores.getString("clave");
+                profesores.add(new Profesor(nombre,edad,sexo,rut));
+
+            }
 
 
+            //RAMOS
+            String consulta_ramos="select * from ramos;";
+            ResultSet rs_ramos=statement1.executeQuery(consulta_ramos);
+            while (rs_ramos.next()){
+                int id_ramo=rs_ramos.getInt("id");
+                String horario=rs_ramos.getString("horario");
+                String sala=rs_ramos.getString("sala");
+                int seccion=rs_ramos.getInt("secion");
+                int cupos=rs_ramos.getInt("cupos");
+                int año=rs_ramos.getInt("año");
+                int semestre=rs_ramos.getInt("semestre");
+                int id_profesor=rs_ramos.getInt("id_profesor");
+                String id_alumnos=rs_ramos.getString("alumnos");
 
-                System.out.println("ramo : "+id);
+                
+                System.out.println("ramo : "+id_ramo);
                 System.out.println("horario: "+ horario);
                 System.out.println("sala: "+sala);
                 System.out.println("seccion: "+seccion);
@@ -37,11 +67,9 @@ public class Main {
                 System.out.println("año: "+año);
                 System.out.println("Id Profesor: "+id_profesor);
                 System.out.println("Id alumnos inscritos: "+id_alumnos);
-
                 System.out.println("----------------\n");
-
-                ramos.add(new Ramo());
             }
+
 
 
         } catch ( Exception e ) {
@@ -77,7 +105,7 @@ public class Main {
 		CAMBIOS RESPECTO AL DIAGRAMA DE CLASES ACTUAL:
 			1. En HistorialAcademico se agregan los metodos
 				obtenerAvance()
-				agregarSemstre();
+				agregars_ramosemstre();
 
 			2. En el diagrama, un Admin debiese tener flechas hacia las entidades que es capaz de crear. Esto
 			se debe a que, al usar el constructor de estas, conoce su estructura
