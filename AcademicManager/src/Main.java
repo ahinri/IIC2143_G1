@@ -1,7 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
@@ -9,15 +8,6 @@ public class Main {
         Contenido cont=Contenido.getMi_instancia();
 
         //estas listas contienen los objetos creados a partir de la informacion almacenada en la base de datos y de lo que se crea en el programa
-        ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
-        ArrayList<Ramo> ramos=new ArrayList<Ramo>();
-        ArrayList<Profesor> profesores=new ArrayList<Profesor>();
-        ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
-        ArrayList<Admin> administradores=new ArrayList<Admin>();
-        ArrayList<Semestre> semestres=new ArrayList<Semestre>();
-        ArrayList<Malla> mallas=new ArrayList<Malla>();
-        ArrayList<HistorialAcademico> historiales= new ArrayList<HistorialAcademico>();
-        ArrayList<Usuario> usuarios=new ArrayList<Usuario>();
 
 
         //a continuacion nos conectamos a la base de datos con sqlite
@@ -37,7 +27,7 @@ public class Main {
                 int creditos_descriptor=rs_descriptores.getInt("creditos");
                 String programa_descriptor=rs_descriptores.getString("programa");
                 int id_descriptor=rs_descriptores.getInt("id_ramo");
-                descriptores.add(new DescriptorRamo(sigla_descriptor,creditos_descriptor,programa_descriptor,id_descriptor));
+                cont.descriptores.add(new DescriptorRamo(sigla_descriptor,creditos_descriptor,programa_descriptor,id_descriptor));
             }
 
             // creamos los Profesores
@@ -52,7 +42,7 @@ public class Main {
                 int id_usuario=rs_profesores.getInt("id_usuario");
                 String username=rs_profesores.getString("username");
                 String clave=rs_profesores.getString("clave");
-                profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -68,7 +58,7 @@ public class Main {
                 int id_usuario=rs_admins.getInt("id_usuario");
                 String username=rs_admins.getString("username");
                 String clave=rs_admins.getString("clave");
-                administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -84,7 +74,7 @@ public class Main {
                 int id_usuario=rs_alumnos.getInt("id_usuario");
                 String username=rs_alumnos.getString("username");
                 String clave=rs_alumnos.getString("clave");
-                alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -105,11 +95,11 @@ public class Main {
 
                 Profesor teacher=null;
                 DescriptorRamo desc=null;
-                for(Profesor x : profesores){if (x.id_usuario==id_profesor){teacher=x;break;}}
-                for(DescriptorRamo x:descriptores){if(x.id_ramo==id_ramo){desc=x;break;}}
+                for(Profesor x : cont.profesores){if (x.id_usuario==id_profesor){teacher=x;break;}}
+                for(DescriptorRamo x:cont.descriptores){if(x.id_ramo==id_ramo){desc=x;break;}}
 
                 if (teacher!=null & desc!=null){
-                    ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,descriptores.get(0)));
+                    cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(0)));
                     System.out.println("Exito al añadir ramo");
                 }
 
@@ -130,7 +120,7 @@ public class Main {
 
                 for (String x:ramos_semestre.split(";")){
 
-                    for(Ramo p:ramos){
+                    for(Ramo p:cont.ramos){
                         if(p.descriptor.id_ramo==Integer.parseInt(x)){
                             auxiliar.agregarRamo(p);
                             break;
@@ -145,7 +135,7 @@ public class Main {
 
                 }
 
-                semestres.add(auxiliar);
+                cont.semestres.add(auxiliar);
             }
 
             //creamos las Mallas id_malla = id_alumno
@@ -158,7 +148,7 @@ public class Main {
                 int maximos_reprobados=rs_mallas.getInt("max_ramos_reprobados");
                 int id_malla= rs_mallas.getInt("id_malla");
                 String id_descriptores=rs_mallas.getString("descriptores_ramos");
-                mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
+                cont.mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
             }
 
             //creamos los Historiales
@@ -171,19 +161,19 @@ public class Main {
                 HistorialAcademico hh=null;
                 Semestre s=null;
 
-                for (Malla x : mallas){
+                for (Malla x : cont.mallas){
                     if(x.id_malla==id_alumnoh){
                         hh=new HistorialAcademico(x);
                         break;
                     }
                 }
-                for (Semestre x:semestres){
+                for (Semestre x:cont.semestres){
                     for(String sh:semestresh.split(";"))
                         if (String.valueOf(x.id_semestre) == sh) {
                             hh.semestres.add(x);
                         }
                 }
-                historiales.add(hh);
+                cont.historiales.add(hh);
             }
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
