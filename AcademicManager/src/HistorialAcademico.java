@@ -18,6 +18,7 @@ public class HistorialAcademico {
             semestres.add(new Semestre(id_semestre));
             return true;
         }
+
         catch (Exception e){
             e.printStackTrace();
             return false;

@@ -10,8 +10,11 @@ public class Main {
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
         ArrayList<Profesor> profesores=new ArrayList<Profesor>();
         ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
+        ArrayList<Admin> administradores=new ArrayList<Admin>();
         ArrayList<Semestre> semestres=new ArrayList<Semestre>();
         ArrayList<Malla> mallas=new ArrayList<Malla>();
+        ArrayList<HistorialAcademico> historiales= new ArrayList<HistorialAcademico>();
+
 
         //a continuacion nos conectamos a la base de datos con sqlite
         Connection c = null;
@@ -46,6 +49,22 @@ public class Main {
                 String username=rs_profesores.getString("username");
                 String clave=rs_profesores.getString("clave");
                 profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario));
+
+            }
+
+            // creamos los Administradores
+
+            String consulta_admins="select * from usuarios where tipo='admin'";
+            ResultSet rs_admins=statement1.executeQuery(consulta_admins);
+            while (rs_admins.next()) {
+                String nombre=rs_admins.getString("nombre");
+                int edad=rs_admins.getInt("edad");
+                String sexo=rs_admins.getString("sexo");
+                String rut=rs_admins.getString("rut");
+                int id_usuario=rs_admins.getInt("id_usuario");
+                String username=rs_admins.getString("username");
+                String clave=rs_admins.getString("clave");
+                administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario));
 
             }
 
@@ -112,7 +131,6 @@ public class Main {
                         }
                     }
                 }
-                /* ERROR DE INDEX PREGUNTAR ANDRES*/
                 int contador=0;
 
 
@@ -120,11 +138,11 @@ public class Main {
                     auxiliar.notas.set(contador, Double.parseDouble(x));
                     contador++;
                 }
+
                 semestres.add(auxiliar);
-                /*  */
             }
 
-            //creamos las Mallas
+            //creamos las Mallas id_malla = id_alumno
 
             String consulta_mallas="Select * from mallas;";
             ResultSet rs_mallas=statement1.executeQuery(consulta_mallas);
@@ -134,14 +152,37 @@ public class Main {
                 int maximos_reprobados=rs_mallas.getInt("max_ramos_reprobados");
                 int id_malla= rs_mallas.getInt("id_malla");
                 String id_descriptores=rs_mallas.getString("descriptores_ramos");
-                System.out.println(id_descriptores);
-
                 mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
             }
 
             //creamos los Historiales
-            String consulta_historiales="Select * from mallas;";
-            
+
+            String consulta_historiales="Select * from historial;";
+            ResultSet rs_historial=statement1.executeQuery(consulta_historiales);
+            while (rs_mallas.next()){
+                int id_alumnoh=rs_mallas.getInt("id_alumno");
+                String semestresh = rs_mallas.getString("semestres");
+                HistorialAcademico hh=null;
+                Semestre s=null;
+
+                for (Malla x : mallas){
+                    if(x.id_malla==id_alumnoh){
+                        hh=new HistorialAcademico(x);
+                        break;
+                    }
+                }
+                for (Semestre x:semestres){
+                    for(String sh:semestresh.split(";"))
+                        if (String.valueOf(x.id_semestre) == sh) {
+                            hh.semestres.add(x);
+                        }
+                }
+                historiales.add(hh);
+
+
+
+            }
+
 
 
 

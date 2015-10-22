@@ -23,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HistorialAcademico.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HistorialAcademico.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Malla.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Malla.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,26 +33,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="HistorialAcademico.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HistorialAcademico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65822786">
-              <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.31392404">
+              <caret line="172" column="17" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#383#399#0" expanded="true" />
-                <element signature="e#508#518#0" expanded="true" />
+                <element signature="e#446#452#0" expanded="true" />
                 <element signature="e#569#577#0" expanded="true" />
-                <element signature="e#632#642#0" expanded="true" />
-                <element signature="e#691#698#0" expanded="true" />
-                <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-                <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-                <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-                <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-                <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-                <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-                <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-                <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+                <element signature="e#635#642#0" expanded="true" />
+                <element signature="e#697#707#0" expanded="true" />
+                <element signature="e#756#763#0" expanded="true" />
+                <element signature="e#831#851#0" expanded="true" />
+                <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+                <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+                <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+                <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+                <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+                <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+                <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+                <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+                <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+                <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+                <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
               </folding>
             </state>
           </provider>
@@ -134,10 +139,10 @@
         <option value="$PROJECT_DIR$/src/Profesor.java" />
         <option value="$PROJECT_DIR$/src/Alumno.java" />
         <option value="$PROJECT_DIR$/src/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/HistorialAcademico.java" />
         <option value="$PROJECT_DIR$/src/Malla.java" />
         <option value="$PROJECT_DIR$/src/Admin.java" />
         <option value="$PROJECT_DIR$/src/Semestre.java" />
+        <option value="$PROJECT_DIR$/src/HistorialAcademico.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -558,12 +563,12 @@
       <option name="number" value="Default" />
       <updated>1444594712601</updated>
       <workItem from="1445451556446" duration="13198000" />
-      <workItem from="1445521633888" duration="7974000" />
+      <workItem from="1445521633888" duration="10184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21172000" />
+    <option name="totallyTimeSpent" value="23382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1341" height="699" extended-state="6" />
@@ -586,7 +591,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17598806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -671,18 +676,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -702,18 +712,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -778,18 +793,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -854,18 +874,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -930,18 +955,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1027,18 +1057,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1050,18 +1085,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1104,6 +1144,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ramo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Malla.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1112,18 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.777778">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ramo.java">
+    <entry file="file://$PROJECT_DIR$/src/HistorialAcademico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1147,41 +1195,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HistorialAcademico.java">
+    <entry file="file://$PROJECT_DIR$/src/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Profesor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state vertical-scroll-proportion="-12.777778">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65822786">
-          <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.31392404">
+          <caret line="172" column="17" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#399#0" expanded="true" />
-            <element signature="e#508#518#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
             <element signature="e#569#577#0" expanded="true" />
-            <element signature="e#632#642#0" expanded="true" />
-            <element signature="e#691#698#0" expanded="true" />
-            <marker date="1445547760000" expanded="true" signature="1109:1135" placeholder="select * fro..descriptores..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1815" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1822" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="1793:1837" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="2571:2613" placeholder="select * fro..usuarios..." />
-            <marker date="1445547760000" expanded="true" signature="3314:3333" placeholder="select * fro..ramos..." />
-            <marker date="1445547760000" expanded="true" signature="4667:4690" placeholder="Select * fro..semestres..." />
-            <marker date="1445547760000" expanded="true" signature="5791:5811" placeholder="Select * fro..mallas..." />
+            <element signature="e#635#642#0" expanded="true" />
+            <element signature="e#697#707#0" expanded="true" />
+            <element signature="e#756#763#0" expanded="true" />
+            <element signature="e#831#851#0" expanded="true" />
+            <marker date="1445550037000" expanded="true" signature="1263:1289" placeholder="select * fro..descriptores..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1969" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1976" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="1947:1991" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="2733:2774" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="3470:3512" placeholder="select * fro..usuarios..." />
+            <marker date="1445550037000" expanded="true" signature="4213:4232" placeholder="select * fro..ramos..." />
+            <marker date="1445550037000" expanded="true" signature="5566:5589" placeholder="Select * fro..semestres..." />
+            <marker date="1445550037000" expanded="true" signature="6636:6656" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7323" placeholder="Select * fro..mallas..." />
+            <marker date="1445550037000" expanded="true" signature="7309:7332" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
