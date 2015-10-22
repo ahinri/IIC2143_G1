@@ -178,17 +178,7 @@ public class Main {
                         }
                 }
                 historiales.add(hh);
-
-
-
             }
-
-
-
-
-
-
-
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
@@ -230,6 +220,8 @@ public class Main {
 			3. A Ramo se le agrega el campo int id
 			4. En Semstre, el tipo de dato del campo notas se cambia a List<Double>
 		 */
+
+
 
 	}
 
