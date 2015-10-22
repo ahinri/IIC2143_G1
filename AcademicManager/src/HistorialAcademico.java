@@ -13,9 +13,9 @@ public class HistorialAcademico {
         this.malla=malla;
     }
 
-    public boolean agregarSemestre(){
+    public boolean agregarSemestre(int id_semestre){
         try{
-            semestres.add(new Semestre());
+            semestres.add(new Semestre(id_semestre));
             return true;
         }
         catch (Exception e){

@@ -8,7 +8,8 @@ public class Semestre {
     ArrayList<Double> notas;
     ArrayList<Ramo> ramos= new ArrayList<Ramo>();
 
-    public Semestre(){
+    public Semestre(int id_semestre){
+        this.id_semestre=id_semestre;
         notas=new ArrayList<Double>();
 
     }
@@ -24,6 +25,6 @@ public class Semestre {
             e.printStackTrace();
             return false;
         }
-
     }
+
 }

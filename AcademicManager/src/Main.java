@@ -9,6 +9,8 @@ public class Main {
 		ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
         ArrayList<Profesor> profesores=new ArrayList<Profesor>();
+        ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
+        ArrayList<Semestre> semestres=new ArrayList<Semestre>();
         Connection c = null;
         java.sql.Statement statement1=null;
         try {
@@ -44,6 +46,21 @@ public class Main {
 
             }
 
+            //Alumnos
+
+            String consulta_alumnos="select * from usuarios where tipo='alumno'";
+            ResultSet rs_alumnos=statement1.executeQuery(consulta_profesores);
+            while (rs_profesores.next()) {
+                String nombre=rs_alumnos.getString("nombre");
+                int edad=rs_alumnos.getInt("edad");
+                String sexo=rs_alumnos.getString("sexo");
+                String rut=rs_alumnos.getString("rut");
+                int id_usuario=rs_alumnos.getInt("id_usuario");
+                String username=rs_alumnos.getString("username");
+                String clave=rs_alumnos.getString("clave");
+                alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario));
+
+            }
 
             //RAMOS
             String consulta_ramos="select * from ramos;";
@@ -71,30 +88,61 @@ public class Main {
 
                 Profesor teacher=null;
                 DescriptorRamo desc=null;
-                for(Profesor x : profesores){
-                    if (x.id_usuario==id_profesor){
-                        teacher=x;
-                        break;
-                    }
-                }
-
-                for(DescriptorRamo x:descriptores){
-                    if(x.id_ramo==id_ramo){
-                        desc=x;
-                    }
-                }
+                for(Profesor x : profesores){if (x.id_usuario==id_profesor){teacher=x;break;}}
+                for(DescriptorRamo x:descriptores){if(x.id_ramo==id_ramo){desc=x;break;}}
 
                 if (teacher!=null & desc!=null){
                     ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,descriptores.get(0)));
                     System.out.println("Exito al añadir ramo");
                 }
-                else {
-                    System.out.println("Profesor o descriptor no encontrado");
-                }
+
+                else {System.out.println("Profesor o descriptor no encontrado");}
 
                 System.out.println("----------------\n");
+            }
+
+            //Semestres con sus ramos y notas
+            String consulta_semestres="Select * from semestres";
+            ResultSet rs_semestres=statement1.executeQuery(consulta_semestres);
+            while (rs_semestres.next()){
+                int id_semestre=rs_semestres.getInt("id_semestre");
+                String notas_semestre=rs_semestres.getString("notas");
+                String ramos_semestre=rs_semestres.getString("ramos");
+
+                Semestre auxiliar=new Semestre(id_semestre);
+
+                for (String x:ramos_semestre.split(";")){
+                    for(Ramo p:ramos){
+                        if(p.descriptor.id_ramo==Integer.parseInt(x)){auxiliar.agregarRamo(p);}
+                    }
+                }
+                /* ERROR DE INDEX PREGUNTAR ANDRES
+                int contador=0;
+                for (String x:ramos_semestre.split(";")){
+                    auxiliar.notas.set(contador, Double.parseDouble(x));
+                    contador++;
+                }
+                semestres.add(auxiliar);
+                */
+            }
+
+            //Mallas
+
+            String consulta_mallas="Select * from mallas;";
+            ResultSet rs_mallas=statement1.executeQuery(consulta_mallas);
+            while (rs_mallas.next()){
+                int maximo_ramos=rs_mallas.getInt("max_creditos");
+                String carrera=rs_mallas.getString("carrera");
+                int maximos_reprobados=rs_mallas.getInt("max_ramos_reprobados");
+                int id_malla= rs_mallas.getInt("id_malla");
+                String id_descriptores=rs_mallas.getString("descriptores_ramos");
 
             }
+
+
+
+
+
 
 
 
