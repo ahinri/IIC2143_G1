@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="226.0" layoutY="150.0" />
+      <Text layoutX="155.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <TextField layoutX="226.0" layoutY="188.0" />
+      <Text layoutX="174.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+      <Text layoutX="101.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Manager">
+         <font>
+            <Font name="Berlin Sans FB" size="49.0" />
+         </font>
+      </Text>
+      <Text layoutX="177.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rut" />
+      <TextField layoutX="226.0" layoutY="267.0" />
+      <Text layoutX="175.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" />
+      <TextField layoutX="226.0" layoutY="229.0" />
+      <TextField layoutX="226.0" layoutY="311.0" />
+      <Text layoutX="175.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+      <Text layoutX="150.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button layoutX="300.0" layoutY="399.0" mnemonicParsing="false" text="Registrarse" />
+      <PasswordField layoutX="226.0" layoutY="349.0" />
+   </children>
+</Pane>

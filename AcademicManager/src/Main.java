@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -9,19 +10,22 @@ public class Main {
 
         //estas listas contienen los objetos creados a partir de la informacion almacenada en la base de datos y de lo que se crea en el programa
 
+=======
+import Pantallas.PLogin;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-        //a continuacion nos conectamos a la base de datos con sqlite
-        Connection c = null;
-        java.sql.Statement statement1=null;
-        try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:ing.db");
-            statement1=c.createStatement();
+import java.io.IOException;
+>>>>>>> origin/func_gui
 
-            // creamos los Descriptores de ramos
-            String consulta_descriptores="select * from descriptores";
-            ResultSet rs_descriptores=statement1.executeQuery(consulta_descriptores);
 
+public class Main extends Application{
+
+<<<<<<< HEAD
             while (rs_descriptores.next()){
                 String sigla_descriptor= rs_descriptores.getString("sigla");
                 int creditos_descriptor=rs_descriptores.getInt("creditos");
@@ -29,9 +33,13 @@ public class Main {
                 int id_descriptor=rs_descriptores.getInt("id_ramo");
                 cont.descriptores.add(new DescriptorRamo(sigla_descriptor,creditos_descriptor,programa_descriptor,id_descriptor));
             }
+=======
+>>>>>>> origin/func_gui
 
-            // creamos los Profesores
+	public static void main(String[] args) throws IOException {
+        launch(args);
 
+<<<<<<< HEAD
             String consulta_profesores="select * from usuarios where tipo='profesor'";
             ResultSet rs_profesores=statement1.executeQuery(consulta_profesores);
             while (rs_profesores.next()) {
@@ -209,16 +217,25 @@ public class Main {
 			1. En HistorialAcademico se agregan los metodos
 				obtenerAvance()
 				agregars_ramosemstre();
+=======
+	}
+>>>>>>> origin/func_gui
 
-			2. En el diagrama, un Admin debiese tener flechas hacia las entidades que es capaz de crear. Esto
-			se debe a que, al usar el constructor de estas, conoce su estructura
 
-			3. A Ramo se le agrega el campo int id
-			4. En Semstre, el tipo de dato del campo notas se cambia a List<Double>
-		 */
+    @Override
+    public void start(Stage primaryStage) throws Exception {
 
+<<<<<<< HEAD
 
 
 	}
+=======
+        PLogin plogin=new PLogin();
+        Scene scene = new Scene(plogin);
+>>>>>>> origin/func_gui
 
+        primaryStage.setTitle("Academic Manager");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
 }
