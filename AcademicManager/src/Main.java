@@ -142,7 +142,7 @@ public class Main {
 
                 mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
             }
-            
+
             //creamos los Historiales
 
 
