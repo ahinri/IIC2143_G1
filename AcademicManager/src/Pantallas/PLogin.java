@@ -19,4 +19,8 @@ public class PLogin extends Pane {
         this.getChildren().add(a);
     }
 
+    public boolean login (String user,String pass){
+        return false;
+    }
+
 }
