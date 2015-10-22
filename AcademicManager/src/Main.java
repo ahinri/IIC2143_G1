@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
+
+        Contenido cont=Contenido.getMi_instancia();
+
         //estas listas contienen los objetos creados a partir de la informacion almacenada en la base de datos y de lo que se crea en el programa
         ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
@@ -115,7 +118,7 @@ public class Main {
 
             }
 
-            // creamos los Semestres con sus ramos y notas
+            // creamos los Semestres con sus ramos y notas, aca da lo mismo que seccion tomo
             String consulta_semestres="Select * from semestres";
             ResultSet rs_semestres=statement1.executeQuery(consulta_semestres);
             while (rs_semestres.next()){
@@ -126,18 +129,20 @@ public class Main {
                 Semestre auxiliar=new Semestre(id_semestre);
 
                 for (String x:ramos_semestre.split(";")){
+
                     for(Ramo p:ramos){
                         if(p.descriptor.id_ramo==Integer.parseInt(x)){
                             auxiliar.agregarRamo(p);
+                            break;
                         }
                     }
                 }
-                int contador=0;
+
 
 
                 for (String x:notas_semestre.split(";")){
-                    auxiliar.notas.set(contador, Double.parseDouble(x));
-                    contador++;
+                    auxiliar.notas.add(Double.parseDouble(x));
+
                 }
 
                 semestres.add(auxiliar);
