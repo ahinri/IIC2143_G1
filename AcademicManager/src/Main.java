@@ -133,6 +133,7 @@ public class Main {
                 int maximos_reprobados=rs_mallas.getInt("max_ramos_reprobados");
                 int id_malla= rs_mallas.getInt("id_malla");
                 String id_descriptores=rs_mallas.getString("descriptores_ramos");
+                System.out.println(id_descriptores);
 
                 mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
             }

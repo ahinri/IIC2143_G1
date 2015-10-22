@@ -5,7 +5,7 @@ import java.util.*;
  */
 public class Semestre {
     int id_semestre;
-    ArrayList<Double> notas;
+    ArrayList<Double> notas = new ArrayList<Double>();
     ArrayList<Ramo> ramos= new ArrayList<Ramo>();
 
     public Semestre(int id_semestre){
