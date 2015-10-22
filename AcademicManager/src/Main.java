@@ -5,12 +5,15 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
-
+        //estas listas contienen los objetos creados a partir de la informacion almacenada en la base de datos y de lo que se crea en el programa
 		ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
         ArrayList<Profesor> profesores=new ArrayList<Profesor>();
         ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
         ArrayList<Semestre> semestres=new ArrayList<Semestre>();
+        ArrayList<Malla> mallas=new ArrayList<Malla>();
+
+        //a continuacion nos conectamos a la base de datos con sqlite
         Connection c = null;
         java.sql.Statement statement1=null;
         try {
@@ -18,7 +21,7 @@ public class Main {
             c = DriverManager.getConnection("jdbc:sqlite:ing.db");
             statement1=c.createStatement();
 
-            //Descriptores
+            // creamos los Descriptores de ramos
             String consulta_descriptores="select * from descriptores";
             ResultSet rs_descriptores=statement1.executeQuery(consulta_descriptores);
 
@@ -30,7 +33,7 @@ public class Main {
                 descriptores.add(new DescriptorRamo(sigla_descriptor,creditos_descriptor,programa_descriptor,id_descriptor));
             }
 
-            //Profesores
+            // creamos los Profesores
 
             String consulta_profesores="select * from usuarios where tipo='profesor'";
             ResultSet rs_profesores=statement1.executeQuery(consulta_profesores);
@@ -46,7 +49,7 @@ public class Main {
 
             }
 
-            //Alumnos
+            //creamos los Alumnos
 
             String consulta_alumnos="select * from usuarios where tipo='alumno'";
             ResultSet rs_alumnos=statement1.executeQuery(consulta_profesores);
@@ -62,7 +65,7 @@ public class Main {
 
             }
 
-            //RAMOS
+            // creamos los RAMOS
             String consulta_ramos="select * from ramos;";
             ResultSet rs_ramos=statement1.executeQuery(consulta_ramos);
             while (rs_ramos.next()){
@@ -101,7 +104,7 @@ public class Main {
                 System.out.println("----------------\n");
             }
 
-            //Semestres con sus ramos y notas
+            // creamos los Semestres con sus ramos y notas
             String consulta_semestres="Select * from semestres";
             ResultSet rs_semestres=statement1.executeQuery(consulta_semestres);
             while (rs_semestres.next()){
@@ -126,21 +129,21 @@ public class Main {
                 */
             }
 
-            //Mallas
+            //creamos las Mallas
 
             String consulta_mallas="Select * from mallas;";
             ResultSet rs_mallas=statement1.executeQuery(consulta_mallas);
             while (rs_mallas.next()){
-                int maximo_ramos=rs_mallas.getInt("max_creditos");
+                int max_creditos=rs_mallas.getInt("max_creditos");
                 String carrera=rs_mallas.getString("carrera");
                 int maximos_reprobados=rs_mallas.getInt("max_ramos_reprobados");
                 int id_malla= rs_mallas.getInt("id_malla");
                 String id_descriptores=rs_mallas.getString("descriptores_ramos");
 
+                mallas.add(new Malla(max_creditos,carrera,maximos_reprobados,id_malla));
             }
-
-
-
+            
+            //creamos los Historiales
 
 
 
