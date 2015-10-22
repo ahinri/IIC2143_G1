@@ -79,15 +79,6 @@ public class Main {
                 int id_profesor=rs_ramos.getInt("id_profesor");
                 String id_alumnos=rs_ramos.getString("alumnos");
 
-                
-                System.out.println("ramo : "+id_ramo);
-                System.out.println("horario: "+ horario);
-                System.out.println("sala: "+sala);
-                System.out.println("seccion: "+seccion);
-                System.out.println("cupos: "+cupos);
-                System.out.println("año: "+anio);
-                System.out.println("Id Profesor: "+id_profesor);
-                System.out.println("Id alumnos inscritos: " + id_alumnos);
 
                 Profesor teacher=null;
                 DescriptorRamo desc=null;
@@ -101,7 +92,7 @@ public class Main {
 
                 else {System.out.println("Profesor o descriptor no encontrado");}
 
-                System.out.println("----------------\n");
+
             }
 
             // creamos los Semestres con sus ramos y notas
@@ -116,17 +107,20 @@ public class Main {
 
                 for (String x:ramos_semestre.split(";")){
                     for(Ramo p:ramos){
-                        if(p.descriptor.id_ramo==Integer.parseInt(x)){auxiliar.agregarRamo(p);}
+                        if(p.descriptor.id_ramo==Integer.parseInt(x)){
+                            auxiliar.agregarRamo(p);
+                        }
                     }
                 }
-                /* ERROR DE INDEX PREGUNTAR ANDRES
+                /* ERROR DE INDEX PREGUNTAR ANDRES*/
                 int contador=0;
-                for (String x:ramos_semestre.split(";")){
+                System.out.println(notas_semestre);
+                for (String x:notas_semestre.split(";")){
                     auxiliar.notas.set(contador, Double.parseDouble(x));
                     contador++;
                 }
                 semestres.add(auxiliar);
-                */
+                /*  */
             }
 
             //creamos las Mallas
