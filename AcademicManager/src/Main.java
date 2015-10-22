@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
+
 		ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
         ArrayList<Profesor> profesores=new ArrayList<Profesor>();
@@ -39,7 +40,7 @@ public class Main {
                 int id_usuario=rs_profesores.getInt("id_usuario");
                 String username=rs_profesores.getString("username");
                 String clave=rs_profesores.getString("clave");
-                profesores.add(new Profesor(nombre,edad,sexo,rut));
+                profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario));
 
             }
 
@@ -53,7 +54,7 @@ public class Main {
                 String sala=rs_ramos.getString("sala");
                 int seccion=rs_ramos.getInt("secion");
                 int cupos=rs_ramos.getInt("cupos");
-                int año=rs_ramos.getInt("año");
+                int anio=rs_ramos.getInt("año");
                 int semestre=rs_ramos.getInt("semestre");
                 int id_profesor=rs_ramos.getInt("id_profesor");
                 String id_alumnos=rs_ramos.getString("alumnos");
@@ -64,10 +65,35 @@ public class Main {
                 System.out.println("sala: "+sala);
                 System.out.println("seccion: "+seccion);
                 System.out.println("cupos: "+cupos);
-                System.out.println("año: "+año);
+                System.out.println("año: "+anio);
                 System.out.println("Id Profesor: "+id_profesor);
-                System.out.println("Id alumnos inscritos: "+id_alumnos);
+                System.out.println("Id alumnos inscritos: " + id_alumnos);
+
+                Profesor teacher=null;
+                DescriptorRamo desc=null;
+                for(Profesor x : profesores){
+                    if (x.id_usuario==id_profesor){
+                        teacher=x;
+                        break;
+                    }
+                }
+
+                for(DescriptorRamo x:descriptores){
+                    if(x.id_ramo==id_ramo){
+                        desc=x;
+                    }
+                }
+
+                if (teacher!=null & desc!=null){
+                    ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,descriptores.get(0)));
+                    System.out.println("Exito al añadir ramo");
+                }
+                else {
+                    System.out.println("Profesor o descriptor no encontrado");
+                }
+
                 System.out.println("----------------\n");
+
             }
 
 
