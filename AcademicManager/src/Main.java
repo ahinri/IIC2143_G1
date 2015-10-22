@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
         //estas listas contienen los objetos creados a partir de la informacion almacenada en la base de datos y de lo que se crea en el programa
-		ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
+        ArrayList<DescriptorRamo> descriptores=new ArrayList<DescriptorRamo>();
         ArrayList<Ramo> ramos=new ArrayList<Ramo>();
         ArrayList<Profesor> profesores=new ArrayList<Profesor>();
         ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
@@ -114,7 +114,8 @@ public class Main {
                 }
                 /* ERROR DE INDEX PREGUNTAR ANDRES*/
                 int contador=0;
-                System.out.println(notas_semestre);
+
+
                 for (String x:notas_semestre.split(";")){
                     auxiliar.notas.set(contador, Double.parseDouble(x));
                     contador++;
@@ -139,6 +140,9 @@ public class Main {
             }
 
             //creamos los Historiales
+            String consulta_historiales="Select * from mallas;";
+            
+
 
 
 
