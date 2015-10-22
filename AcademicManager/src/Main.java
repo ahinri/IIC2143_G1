@@ -14,6 +14,7 @@ public class Main {
         ArrayList<Semestre> semestres=new ArrayList<Semestre>();
         ArrayList<Malla> mallas=new ArrayList<Malla>();
         ArrayList<HistorialAcademico> historiales= new ArrayList<HistorialAcademico>();
+        ArrayList<Usuario> usuarios=new ArrayList<Usuario>();
 
 
         //a continuacion nos conectamos a la base de datos con sqlite
@@ -48,7 +49,7 @@ public class Main {
                 int id_usuario=rs_profesores.getInt("id_usuario");
                 String username=rs_profesores.getString("username");
                 String clave=rs_profesores.getString("clave");
-                profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario));
+                profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -64,7 +65,7 @@ public class Main {
                 int id_usuario=rs_admins.getInt("id_usuario");
                 String username=rs_admins.getString("username");
                 String clave=rs_admins.getString("clave");
-                administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario));
+                administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -80,7 +81,7 @@ public class Main {
                 int id_usuario=rs_alumnos.getInt("id_usuario");
                 String username=rs_alumnos.getString("username");
                 String clave=rs_alumnos.getString("clave");
-                alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario));
+                alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 

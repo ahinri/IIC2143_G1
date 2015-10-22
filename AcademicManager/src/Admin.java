@@ -3,8 +3,8 @@
  */
 public class Admin extends Usuario {
 
-	public Admin(String nombre, int edad, String sexo, String rut,int id_usuario) {
-		super(nombre, edad, sexo, rut,id_usuario);
+	public Admin(String nombre, int edad, String sexo, String rut,int id_usuario,String username,String password) {
+		super(nombre, edad, sexo, rut,id_usuario,username,password);
 	}
 
 	public void crearMalla()
