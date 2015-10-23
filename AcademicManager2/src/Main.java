@@ -189,6 +189,11 @@ public class Main extends Application {
                         }
                 }
                 cont.historiales.add(hh);
+                for (Alumno al:cont.alumnos){
+                    if (al.id_usuario==id_alumnoh){
+                        al.historialesAcademicos.add(hh);
+                    }
+                }
             }
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );

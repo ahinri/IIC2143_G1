@@ -15,12 +15,11 @@ public class PHistorial extends Pane {
     HistorialAcademico ha=null;
 
     public PHistorial(HistorialAcademico ha) throws IOException {
-
         this.ha=ha;
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
         poblarVista();
-        
+
 
     }
 
