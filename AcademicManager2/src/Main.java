@@ -188,6 +188,7 @@ public class Main extends Application {
                             hh.semestres.add(x);
                         }
                 }
+
                 cont.historiales.add(hh);
                 for (Alumno al:cont.alumnos){
                     if (al.id_usuario==id_alumnoh){

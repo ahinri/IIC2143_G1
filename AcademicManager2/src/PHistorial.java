@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * Created by ahinri on 22-10-2015.
  */
 public class PHistorial extends Pane {
+    Contenido cont =Contenido.getMi_instancia();
 
     HistorialAcademico ha=null;
 
@@ -26,11 +27,11 @@ public class PHistorial extends Pane {
     public void poblarVista(){
         Node grid_historial = this.lookup("#pane_global");
         //grid_historial.toString();
-
-
     }
 
     public void agregarSemestre(ArrayList<Ramo> ramos){
+        int size=cont.semestres.size();
+        Semestre nuevo= new Semestre(size);
 
     }
 
