@@ -26,9 +26,7 @@ public class PHistorial extends Pane {
 
 
     public void poblarVista(HistorialAcademico ha){
-        //1. por cada semestre en el historial, agregar columna
-        //
-        //System.out.println(grid_historial.toString());
+
 
     }
 
