@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="59.0" layoutY="61.0" text="Horario" />
+      <Button fx:id="bt_crear" layoutX="400.0" layoutY="292.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Crear" />
+      <TextField fx:id="txt_horario" layoutX="116.0" layoutY="57.0" />
+      <Label layoutX="59.0" layoutY="107.0" text="Sala" />
+      <TextField fx:id="txt_sala" layoutX="116.0" layoutY="103.0" />
+      <Label layoutX="59.0" layoutY="151.0" text="Seccion" />
+      <TextField fx:id="txt_seccion" layoutX="116.0" layoutY="147.0" />
+      <TextField fx:id="txt_cupos" layoutX="116.0" layoutY="188.0" />
+      <Label layoutX="59.0" layoutY="192.0" text="Cupos" />
+      <Label layoutX="59.0" layoutY="232.0" text="Año" />
+      <TextField fx:id="txt_anio" layoutX="116.0" layoutY="228.0" />
+      <TextField fx:id="txt_semestre" layoutX="116.0" layoutY="271.0" />
+      <Label layoutX="59.0" layoutY="275.0" text="Semestre" />
+      <Label layoutX="356.0" layoutY="95.0" text="Profesor" />
+      <Label layoutX="358.0" layoutY="172.0" text="Descriptor" />
+      <ComboBox fx:id="combo_prof" layoutX="422.0" layoutY="91.0" prefWidth="150.0" />
+      <ComboBox fx:id="combo_desc" layoutX="422.0" layoutY="168.0" prefWidth="150.0" />
+   </children>
+</Pane>

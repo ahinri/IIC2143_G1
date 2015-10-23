@@ -3,6 +3,8 @@
  */
 public class Admin extends Usuario {
 
+	Contenido cont = Contenido.getMi_instancia();
+
 	public Admin(String nombre, int edad, String sexo, String rut,int id_usuario,String username,String password) {
 		super(nombre, edad, sexo, rut,id_usuario,username,password);
 	}
@@ -18,18 +20,10 @@ public class Admin extends Usuario {
 		//agregarla a un catalogo de mallas?
 	}
 	
-	public void crearRamo(Profesor p,DescriptorRamo d) //en realidad se van a seleccionar
+	public void crearRamo(String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
-		String horario = "L3"; //cambiar a leer valor
-		String sala = "A1"; //cambiar a leer valor
-		int seccion = 1; //cambiar a leer valor
-		int cupos = 50; //cambiar a leer valor
-		int anio = 2016; //cambiar a leer valor
-		int num_semestre = 1; //cambiar a leer valor
-		Profesor profesor=p; //cambiar a seleccionar profesor
-		DescriptorRamo descriptor=d; //cambiar a seleccionar descriptor
 		Ramo nuevo = new Ramo(horario, sala, seccion, cupos, anio, num_semestre, profesor, descriptor);
-		//agregarlo a un catalogo de ramos?
+		cont.ramos.add(nuevo);
 	}
 	
 	public void editarMalla(Malla m)
