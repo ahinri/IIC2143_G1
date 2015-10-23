@@ -50,13 +50,15 @@ public class PHistorial extends Pane {
 
 
                 try {
-                    PAvance pRegistro;
-                    pRegistro = new PAvance();
-                    Scene scene = new Scene(pRegistro);
+                    PAvance pAvance;
+                    pAvance = new PAvance(ha);
+                    Scene scene = new Scene(pAvance);
                     Stage stg=new Stage();
                     stg.setTitle("Academic Manager");
                     stg.setScene(scene);
                     stg.show();
+                    pAvance=(PAvance)scene.getRoot();
+                    pAvance.poblarVista();
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
