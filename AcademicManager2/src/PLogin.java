@@ -13,6 +13,7 @@ import java.io.IOException;
 public class PLogin extends Pane {
     Contenido cont=Contenido.getMi_instancia();
     public PLogin() throws IOException {
+
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/login.fxml"));
         this.getChildren().add(a);
 
@@ -50,7 +51,8 @@ public class PLogin extends Pane {
         			return true;
         	}
         }
-        return false;
+        //TODO: cambiar este return a false
+        return true;
     }
 
     public HistorialAcademico get_historial(String user){
