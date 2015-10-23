@@ -44,10 +44,6 @@ public class PLogin extends Pane {
         });
 
     }
-
-
-
-
     public boolean login (String user,String pass){
         for (Usuario usuarioEnLista : cont.usuarios) {
         	if (usuarioEnLista._username == user & usuarioEnLista._password == pass ) {
@@ -63,7 +59,6 @@ public class PLogin extends Pane {
     			return alumnoEnLista.historialesAcademicos.get(0);
     		}
     	}
-
         return null;
     }
 

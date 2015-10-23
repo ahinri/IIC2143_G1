@@ -1,23 +1,19 @@
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.Text;
-import sun.rmi.runtime.Log;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by ahinri on 22-10-2015.
  */
 public class PHistorial extends Pane {
-
+    HistorialAcademico ha=null;
     public PHistorial(HistorialAcademico ha) throws IOException {
+        this.ha=ha;
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
         poblarVista(ha);
@@ -33,6 +29,11 @@ public class PHistorial extends Pane {
         //1. por cada semestre en el historial, agregar columna
         //
         //System.out.println(grid_historial.toString());
+
+    }
+
+    public void agregarSemestre(ArrayList<Ramo> ramos){
+
     }
 
 }
