@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class PLogin extends Pane {
-
+    Contenido cont=Contenido.getMi_instancia();
     public PLogin() throws IOException {
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/login.fxml"));
         this.getChildren().add(a);
@@ -47,24 +47,23 @@ public class PLogin extends Pane {
 
 
 
+
     public boolean login (String user,String pass){
-/*        for (Usuario usuarioEnLista : cont.usuarios) {
-        	if (usuarioEnLista.username == user) {
-        		if (usuarioEnLista.password == pass) {
+        for (Usuario usuarioEnLista : cont.usuarios) {
+        	if (usuarioEnLista._username == user & usuarioEnLista._password == pass ) {
         			return true;
-        		}
         	}
         }
-        return false; */
-        return true;
+        return false;
     }
 
     public HistorialAcademico get_historial(String user){
- /*   	for (Alumno alumnoEnLista : alumnos) {
-    		if (alumnoEnLista.username == user) {
-    			return alumnoEnLista.historialesAcademicos;
+        for (Alumno alumnoEnLista : cont.alumnos) {
+    		if (alumnoEnLista._username == user) {
+    			return alumnoEnLista.historialesAcademicos.get(0);
     		}
-    	}*/
+    	}
+
         return null;
     }
 
