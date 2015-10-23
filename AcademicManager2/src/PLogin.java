@@ -50,8 +50,9 @@ public class PLogin extends Pane {
 
     }
     public boolean login (String user,String pass){
-        for (Usuario usuarioEnLista : cont.usuarios) {
-        	if (usuarioEnLista._username == user & usuarioEnLista._password == pass ) {
+        //TODO: cambiar a usuarios
+        for (Usuario usuarioEnLista : cont.alumnos) {
+        	if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
         			return true;
         	}
         }

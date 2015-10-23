@@ -116,7 +116,6 @@ public class Main extends Application {
 
                 if (teacher!=null & desc!=null){
                     cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(0)));
-                    System.out.println("Exito al añadir ramo");
                 }
 
                 else {System.out.println("Profesor o descriptor no encontrado");}
