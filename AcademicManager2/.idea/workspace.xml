@@ -64,8 +64,8 @@
       <file leaf-file-name="PHistorial.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PHistorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5477387">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.30150753">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -471,12 +471,12 @@
       <workItem from="1445559763356" duration="750000" />
       <workItem from="1445560676260" duration="25000" />
       <workItem from="1445561349880" duration="1483000" />
-      <workItem from="1445601996547" duration="1566000" />
+      <workItem from="1445601996547" duration="1681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5126000" />
+    <option name="totallyTimeSpent" value="5241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="699" extended-state="6" />
@@ -708,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PHistorial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5477387">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.30150753">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -20,8 +20,6 @@ public class PHistorial extends Pane {
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
         poblarVista();
-
-
     }
 
     public void poblarVista(){
