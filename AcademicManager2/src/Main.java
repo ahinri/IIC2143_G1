@@ -1,7 +1,7 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,7 +22,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        launch(args);
+
 
         Contenido cont=Contenido.getMi_instancia();
 
@@ -196,5 +196,6 @@ public class Main extends Application {
 
         }
         System.out.println("Opened database successfully");
+        launch(args);
     }
 }
