@@ -106,7 +106,7 @@ public class PHistorial extends Pane {
                     lista_ids.add(Integer.parseInt(tf_idramo6.getText()));
 
                 }catch (Exception exx){
-                    exx.printStackTrace();
+
                 }
                 agregarSemestre(lista_ids);
 
