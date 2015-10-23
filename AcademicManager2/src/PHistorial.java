@@ -81,6 +81,9 @@ public class PHistorial extends Pane {
                     stg.setTitle("Academic Manager");
                     stg.setScene(scene);
                     stg.show();
+
+                    pRegistro=(PBusca)scene.getRoot();
+                    pRegistro.poblarVista();
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
