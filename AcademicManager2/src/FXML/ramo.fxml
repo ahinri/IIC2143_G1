@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="134.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="rect_ramo" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="84.0" layoutX="-4.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <Text fx:id="label_sigla" layoutX="51.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{sigla}" />
+      <Text fx:id="label_nombre" layoutX="42.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{nombre}" />
+   </children>
+</Pane>

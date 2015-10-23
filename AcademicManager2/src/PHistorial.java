@@ -25,6 +25,15 @@ public class PHistorial extends Pane {
 
     public void poblarVista(){
         GridPane grid_historial =(GridPane) this.lookup("#grid_historial");
+        //TODO: asumo que el historial llega bueno
+/*        System.out.println(ha);
+        System.out.println(ha.semestres);
+        System.out.println(ha.semestres.get(0));
+        System.out.println(ha.semestres.get(0).ramos);
+        System.out.println(ha.semestres.get(0).ramos.get(0));
+        System.out.println(ha.semestres.get(0).ramos.get(0).descriptor.sigla);
+*/
+
         grid_historial.addColumn(0,new Text("   hola"));
         grid_historial.addColumn(0,new Text("   chao"));
     }

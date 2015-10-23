@@ -81,7 +81,7 @@ public class Main extends Application {
             //creamos los Alumnos
 
             String consulta_alumnos="select * from usuarios where tipo='alumno'";
-            ResultSet rs_alumnos=statement1.executeQuery(consulta_profesores);
+            ResultSet rs_alumnos=statement1.executeQuery(consulta_alumnos);
             while (rs_profesores.next()) {
                 String nombre=rs_alumnos.getString("nombre");
                 int edad=rs_alumnos.getInt("edad");
@@ -91,6 +91,7 @@ public class Main extends Application {
                 String username=rs_alumnos.getString("username");
                 String clave=rs_alumnos.getString("clave");
                 cont.alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
+
 
             }
 

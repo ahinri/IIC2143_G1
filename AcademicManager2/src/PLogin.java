@@ -1,6 +1,7 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -37,6 +38,8 @@ public class PLogin extends Pane {
                         stg.setScene(scene);
                         stg.show();
 
+                        ((Node)(e.getSource())).getScene().getWindow().hide();
+
                         pHistorial=(PHistorial)scene.getRoot();
                         pHistorial.poblarVista();
                     } catch (IOException e1) {
@@ -50,19 +53,23 @@ public class PLogin extends Pane {
 
     }
     public boolean login (String user,String pass){
-        //TODO: cambiar a usuarios
+        //TODO: cambiar a cont.usuarios
         for (Usuario usuarioEnLista : cont.alumnos) {
+            System.out.println(usuarioEnLista._username);
+            System.out.println(usuarioEnLista._password);
         	if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
         			return true;
         	}
         }
+        System.out.println("---------------");
         notificarErrorLogin();
         return false;
     }
 
     public HistorialAcademico get_historial(String user){
         for (Alumno alumnoEnLista : cont.alumnos) {
-    		if (alumnoEnLista._username == user) {
+    		if (alumnoEnLista._username.equals(user)) {
+                //TODO: lista de historiales vacia
     			return alumnoEnLista.historialesAcademicos.get(0);
     		}
     	}
