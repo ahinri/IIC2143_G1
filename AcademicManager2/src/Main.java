@@ -170,9 +170,9 @@ public class Main extends Application {
 
             String consulta_historiales="Select * from historial;";
             ResultSet rs_historial=statement1.executeQuery(consulta_historiales);
-            while (rs_mallas.next()){
-                int id_alumnoh=rs_mallas.getInt("id_alumno");
-                String semestresh = rs_mallas.getString("semestres");
+            while (rs_historial.next()){
+                int id_alumnoh=rs_historial.getInt("id_alumno");
+                String semestresh = rs_historial.getString("semestres");
                 HistorialAcademico hh=null;
                 Semestre s=null;
 
