@@ -33,6 +33,7 @@ public class PHistorial extends Pane {
         //crear eventos de botones
         Button bt_add_semestre = (Button)this.lookup("#bt_add_semestre");
         Button bt_avance = (Button)this.lookup("#bt_avance");
+        Button bt_busca = (Button)this.lookup("#bt_busca");
 
         //ids ramos
         TextField tf_idramo1 = (TextField)this.lookup("#nramo1");
@@ -51,6 +52,30 @@ public class PHistorial extends Pane {
                 try {
                     PAvance pRegistro;
                     pRegistro = new PAvance();
+                    Scene scene = new Scene(pRegistro);
+                    Stage stg=new Stage();
+                    stg.setTitle("Academic Manager");
+                    stg.setScene(scene);
+                    stg.show();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
+
+
+
+            }
+
+        });
+
+        bt_busca.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+
+
+                try {
+                    PBusca pRegistro;
+                    pRegistro = new PBusca();
                     Scene scene = new Scene(pRegistro);
                     Stage stg=new Stage();
                     stg.setTitle("Academic Manager");
