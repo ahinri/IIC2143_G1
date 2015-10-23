@@ -2,7 +2,6 @@
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
@@ -21,13 +20,9 @@ public class PHistorial extends Pane {
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
         poblarVista();
-
-
-
-
+        
 
     }
-
 
     public void poblarVista(){
         Node grid_historial = this.lookup("#pane_global");
