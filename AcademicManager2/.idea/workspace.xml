@@ -28,7 +28,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding />
+              <folding>
+                <element signature="e#220#226#0" expanded="false" />
+                <element signature="e#520#521#0" expanded="false" />
+                <element signature="e#539#540#0" expanded="false" />
+                <element signature="e#572#573#0" expanded="false" />
+                <element signature="e#594#595#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,7 +44,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
+              <folding>
+                <element signature="e#235#236#0" expanded="false" />
+                <element signature="e#267#268#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,21 +55,10 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2740864">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30807248">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-                <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-                <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-                <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-                <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-                <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-                <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-                <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-                <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-                <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-                <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
               </folding>
             </state>
           </provider>
@@ -71,7 +69,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#417#433#0" expanded="false" />
+                <element signature="e#476#482#0" expanded="false" />
+                <element signature="e#534#544#0" expanded="false" />
+                <element signature="e#591#599#0" expanded="false" />
+                <element signature="e#653#660#0" expanded="false" />
+                <element signature="e#711#721#0" expanded="false" />
+                <element signature="e#766#773#0" expanded="false" />
+                <element signature="e#837#857#0" expanded="false" />
+                <element signature="e#906#915#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +89,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding />
+              <folding>
+                <element signature="e#650#658#0" expanded="false" />
+                <element signature="e#736#744#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +102,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#258#278#0" expanded="false" />
+                <element signature="e#519#520#0" expanded="false" />
+                <element signature="e#591#592#0" expanded="false" />
+                <element signature="e#704#712#0" expanded="false" />
+                <element signature="e#792#800#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +119,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-              <folding />
+              <folding>
+                <element signature="e#153#161#0" expanded="false" />
+                <element signature="e#205#211#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,9 +174,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1366" />
-    <option name="height" value="699" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -216,21 +238,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AcademicManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AcademicManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AcademicManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="AcademicManager2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,7 +250,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -253,8 +261,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -353,74 +361,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -435,16 +375,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -473,21 +403,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -516,21 +437,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <list size="1">
@@ -562,59 +468,59 @@
     <option name="totallyTimeSpent" value="26439000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="699" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17598806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17598806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -648,7 +554,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -656,7 +565,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -664,7 +576,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -674,17 +592,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -693,7 +600,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -703,17 +613,6 @@
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -730,7 +629,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="127" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="127" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -738,7 +640,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="254" column="10" selection-start-line="254" selection-start-column="10" selection-end-line="254" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +669,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -774,17 +685,6 @@
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -801,7 +701,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="127" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="127" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,7 +712,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="254" column="10" selection-start-line="254" selection-start-column="10" selection-end-line="254" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,7 +741,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -845,17 +757,6 @@
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -872,7 +773,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="127" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="127" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,7 +784,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="254" column="10" selection-start-line="254" selection-start-column="10" selection-end-line="254" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -906,7 +813,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,17 +829,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -957,7 +859,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -965,7 +870,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -991,7 +899,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,17 +922,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1029,17 +932,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1081,7 +973,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#220#226#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,7 +995,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="e#650#658#0" expanded="false" />
+            <element signature="e#736#744#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,7 +1006,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#153#161#0" expanded="false" />
+            <element signature="e#205#211#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,7 +1017,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#258#278#0" expanded="false" />
+            <element signature="e#519#520#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#704#712#0" expanded="false" />
+            <element signature="e#792#800#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,7 +1032,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,7 +1043,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#417#433#0" expanded="false" />
+            <element signature="e#476#482#0" expanded="false" />
+            <element signature="e#534#544#0" expanded="false" />
+            <element signature="e#591#599#0" expanded="false" />
+            <element signature="e#653#660#0" expanded="false" />
+            <element signature="e#711#721#0" expanded="false" />
+            <element signature="e#766#773#0" expanded="false" />
+            <element signature="e#837#857#0" expanded="false" />
+            <element signature="e#906#915#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,27 +1061,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2740864">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30807248">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1445556750000" expanded="true" signature="757:783" placeholder="select * fro..descriptores..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1468" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1475" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="1446:1490" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="2252:2293" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3009:3051" placeholder="select * fro..usuarios..." />
-            <marker date="1445556750000" expanded="true" signature="3772:3791" placeholder="select * fro..ramos..." />
-            <marker date="1445556750000" expanded="true" signature="5179:5202" placeholder="Select * fro..semestres..." />
-            <marker date="1445556750000" expanded="true" signature="6223:6243" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6915" placeholder="Select * fro..mallas..." />
-            <marker date="1445556750000" expanded="true" signature="6901:6924" placeholder="Select * fro..historial..." />
           </folding>
         </state>
       </provider>
@@ -1238,6 +1150,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>sqlite-jdbc-3.8.11.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
