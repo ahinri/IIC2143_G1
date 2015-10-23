@@ -18,5 +18,6 @@
          </font>
       </Text>
       <PasswordField fx:id="tf_pass" layoutX="226.0" layoutY="188.0" />
+      <Text fx:id="label_error" fill="RED" layoutX="226.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </Pane>

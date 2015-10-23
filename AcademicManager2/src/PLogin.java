@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -54,8 +55,8 @@ public class PLogin extends Pane {
         			return true;
         	}
         }
-        //TODO: cambiar este return a false
-        return true;
+        notificarErrorLogin();
+        return false;
     }
 
     public HistorialAcademico get_historial(String user){
@@ -65,6 +66,11 @@ public class PLogin extends Pane {
     		}
     	}
         return null;
+    }
+
+    public void notificarErrorLogin(){
+        Text label_error = (Text)this.lookup("#label_error");
+        label_error.setText("Usuario o contrasena incorrecto");
     }
 
 }

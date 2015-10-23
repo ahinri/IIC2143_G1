@@ -25,6 +25,8 @@ public class Main extends Application {
 
         Contenido cont=Contenido.getMi_instancia();
 
+
+        //POBLACION DEL SISTEMA
         Connection c = null;
         java.sql.Statement statement1=null;
         try {
