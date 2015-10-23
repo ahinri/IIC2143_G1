@@ -7,9 +7,8 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="143.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="143.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle fx:id="rect_ramo" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="143.0" />
       <Text fx:id="label_sigla" fill="WHITE" layoutX="48.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{sigla}">
          <font>
             <Font name="Arial" size="12.0" />

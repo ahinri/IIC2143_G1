@@ -1,3 +1,4 @@
+import java.sql.Connection;
 import java.util.ArrayList;
 
 /**
@@ -26,5 +27,12 @@ public class Contenido {
     ArrayList<Malla> mallas=new ArrayList<Malla>();
     ArrayList<HistorialAcademico> historiales= new ArrayList<HistorialAcademico>();
     ArrayList<Usuario> usuarios=new ArrayList<Usuario>();
+
+    ArrayList<DescriptorRamo> avanze_descriptor_ramos= new ArrayList<DescriptorRamo>();
+    ArrayList<Double> avanze_notas= new ArrayList<Double>();
+    ArrayList<DescriptorRamo> no_avanzados=new ArrayList<DescriptorRamo>();
+
+    Connection cs=null;
+    java.sql.Statement cargar=null;
 
 }

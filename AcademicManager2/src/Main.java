@@ -34,6 +34,9 @@ public class Main extends Application {
             c = DriverManager.getConnection("jdbc:sqlite:ing.db");
             statement1=c.createStatement();
 
+            cont.cs=c;
+            cont.cargar=statement1;
+
             // creamos los Descriptores de ramos
             String consulta_descriptores="select * from descriptores";
             ResultSet rs_descriptores=statement1.executeQuery(consulta_descriptores);
