@@ -35,6 +35,9 @@ public class PLogin extends Pane {
                         stg.setTitle("Academic Manager");
                         stg.setScene(scene);
                         stg.show();
+
+                        pHistorial=(PHistorial)scene.getRoot();
+                        pHistorial.poblarVista();
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
