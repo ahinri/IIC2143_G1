@@ -31,6 +31,7 @@ public class PHistorial extends Pane {
         int size=cont.semestres.size();
         Semestre nuevo= new Semestre(size);
 
+
     }
 
 }
