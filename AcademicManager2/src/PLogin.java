@@ -20,6 +20,7 @@ public class PLogin extends Pane {
         this.getChildren().add(a);
 
         Button bt_ingresar = (Button)this.lookup("#bt_ingresar");
+        Button bt_reg = (Button)this.lookup("#bt_reg");
         TextField tf_user = (TextField)this.lookup("#tf_user");
         TextField tf_pass = (TextField)this.lookup("#tf_pass");
 
@@ -51,6 +52,27 @@ public class PLogin extends Pane {
             }
         });
 
+        bt_reg.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                    try {
+                        PRegistro pRegistro=new PRegistro();
+                        Scene scene = new Scene(pRegistro);
+                        Stage stg=new Stage();
+                        stg.setTitle("Academic Manager");
+                        stg.setScene(scene);
+                        stg.show();
+
+                        ((Node)(e.getSource())).getScene().getWindow().hide();
+
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+
+                }
+
+        });
+
     }
     public boolean login (String user,String pass){
         //TODO: cambiar a cont.usuarios
@@ -67,7 +89,6 @@ public class PLogin extends Pane {
     public HistorialAcademico get_historial(String user){
         for (Alumno alumnoEnLista : cont.alumnos) {
     		if (alumnoEnLista._username.equals(user)) {
-                //TODO: lista de historiales vacia
     			return alumnoEnLista.historialesAcademicos.get(0);
     		}
     	}
