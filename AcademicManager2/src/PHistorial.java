@@ -33,15 +33,30 @@ public class PHistorial extends Pane {
         //crear eventos de botones
         Button bt_add_semestre = (Button)this.lookup("#bt_add_semestre");
 
+        //ids ramos
+        TextField tf_idramo1 = (TextField)this.lookup("#nramo1");
+        TextField tf_idramo2 = (TextField)this.lookup("#nramo2");
+        TextField tf_idramo3 = (TextField)this.lookup("#nramo3");
+        TextField tf_idramo4 = (TextField)this.lookup("#nramo4");
+        TextField tf_idramo5 = (TextField)this.lookup("#nramo5");
+        TextField tf_idramo6 = (TextField)this.lookup("#nramo6");
 
         bt_add_semestre.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
 
                 ArrayList<Integer> lista_ids=new ArrayList<Integer>();
-                lista_ids.add(0);
-                lista_ids.add(1);
-                lista_ids.add(2);
+                try{
+                    lista_ids.add(Integer.parseInt(tf_idramo1.getText()));
+                    lista_ids.add(Integer.parseInt(tf_idramo2.getText()));
+                    lista_ids.add(Integer.parseInt(tf_idramo3.getText()));
+                    lista_ids.add(Integer.parseInt(tf_idramo4.getText()));
+                    lista_ids.add(Integer.parseInt(tf_idramo5.getText()));
+                    lista_ids.add(Integer.parseInt(tf_idramo6.getText()));
+
+                }catch (Exception exx){
+                    exx.printStackTrace();
+                }
                 agregarSemestre(lista_ids);
 
 

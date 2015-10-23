@@ -55,8 +55,6 @@ public class PLogin extends Pane {
     public boolean login (String user,String pass){
         //TODO: cambiar a cont.usuarios
         for (Usuario usuarioEnLista : cont.alumnos) {
-            System.out.println(usuarioEnLista._username);
-            System.out.println(usuarioEnLista._password);
         	if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
         			return true;
         	}
