@@ -86,6 +86,7 @@ public class PRegistro extends Pane {
         }
 
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
+        nuevo.crearHistorial(cont.mallas.get(0));
 
         cont.alumnos.add(nuevo);
         cont.usuarios.add(nuevo);
@@ -93,7 +94,6 @@ public class PRegistro extends Pane {
 
 
         String query_usuarios="INSERT INTO USUARIOS VALUES('"+nombre+"',"+edad+",'"+sexo_string+"','"+rut+"',"+id_usuario+",' "+"alumno" + "','"+user+"','"+password+"')";
-        System.out.println(query_usuarios);
 
         try {
             cont.cargar.execute(query_usuarios);

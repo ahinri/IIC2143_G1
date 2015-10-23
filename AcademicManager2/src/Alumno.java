@@ -11,7 +11,7 @@ public class Alumno extends Usuario{
 
     public Alumno(String nombre, int edad, String sexo, String rut,int id_usuario,String username,String password) {
         super(nombre, edad, sexo, rut,id_usuario,username,password);
-        crearHistorial(null);
+
     }
 
     public void crearHistorial(Malla malla){

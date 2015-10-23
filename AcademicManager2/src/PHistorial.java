@@ -140,11 +140,8 @@ public class PHistorial extends Pane {
         }
 
         System.out.println("--------------SQL----------------");
-        System.out.println(notas);
         String query_semestres="INSERT INTO semestres values("+size+"," +"'"+notas.substring(0,notas.length()-1)+"'"+","+"'"+ramos_sql.substring(0,ramos_sql.length()-1)+"'"+");";
         String query_historiales="UPDATE historial SET semestres="+"'"+semestres_sql.substring(0,semestres_sql.length()-1)+"'"+" WHERE  id_alumno="+ha.malla.id_malla+";";
-        System.out.println(query_semestres);
-        System.out.println(query_historiales);
         try {
             cont.cargar.execute(query_semestres);
             cont.cargar.execute(query_historiales);
