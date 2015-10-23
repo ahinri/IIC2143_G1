@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="tf_user" layoutX="226.0" layoutY="150.0" />
+      <Text layoutX="175.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+      <Button fx:id="bt_reg" layoutX="300.0" layoutY="232.0" mnemonicParsing="false" text="Registrarse" />
+      <Button fx:id="bt_ingresar" layoutX="226.0" layoutY="232.0" mnemonicParsing="false" text="Ingresar" />
+      <Text layoutX="150.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text layoutX="101.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Manager">
+         <font>
+            <Font name="Berlin Sans FB" size="49.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="tf_pass" layoutX="226.0" layoutY="188.0" />
+   </children>
+</Pane>

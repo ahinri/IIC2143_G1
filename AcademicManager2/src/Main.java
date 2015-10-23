@@ -10,9 +10,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Pane p=new Pane();
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(p, 300, 275));
+        PLogin plogin=new PLogin();
+        Scene scene = new Scene(plogin);
+
+        primaryStage.setTitle("Academic Manager");
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
