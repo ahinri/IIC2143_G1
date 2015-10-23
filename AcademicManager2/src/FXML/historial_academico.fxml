@@ -37,7 +37,7 @@
          </content>
       </ScrollPane>
       <Button fx:id="bt_add_semestre" layoutX="29.0" layoutY="220.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="149.0" text="Agregar Semestre" />
-      <Button layoutX="30.0" layoutY="370.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="149.0" text="Avance Curricular" />
+      <Button fx:id="bt_avance" layoutX="30.0" layoutY="370.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="149.0" text="Avance Curricular" />
       <Button layoutX="29.0" layoutY="296.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="149.0" text="Buscar Cursos" />
       <Text layoutX="54.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDs ramos nuevos" />
       <VBox layoutX="29.0" layoutY="57.0" prefHeight="125.0" prefWidth="144.0">
