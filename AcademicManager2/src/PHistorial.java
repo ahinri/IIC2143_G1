@@ -7,6 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
+import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
 
 /**
@@ -23,19 +24,36 @@ public class PHistorial extends Pane {
         this.getChildren().add(a);
     }
 
-    public void poblarVista(){
+    public void poblarVista() throws IOException {
         GridPane grid_historial =(GridPane) this.lookup("#grid_historial");
-        //TODO: asumo que el historial llega bueno
-/*        System.out.println(ha);
-        System.out.println(ha.semestres);
-        System.out.println(ha.semestres.get(0));
-        System.out.println(ha.semestres.get(0).ramos);
-        System.out.println(ha.semestres.get(0).ramos.get(0));
-        System.out.println(ha.semestres.get(0).ramos.get(0).descriptor.sigla);
-*/
 
-        grid_historial.addColumn(0,new Text("   hola"));
-        grid_historial.addColumn(0,new Text("   chao"));
+
+
+        int num_sem=0;
+
+        System.out.print("NUM SEMSTRES: ");
+        System.out.println(ha.semestres.size());
+
+        for (Semestre sem:ha.semestres){
+
+            System.out.print("NUM RAMOS: ");
+            System.out.println(sem.ramos.size());
+
+            for (Ramo ramo:sem.ramos){
+                Parent ramo_gui=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/ramo.fxml"));
+
+                Text label_sigla=(Text)ramo_gui.lookup("#label_sigla");
+                String sigla=ramo.descriptor.sigla;
+                System.out.println(sigla);
+                label_sigla.setText(sigla);
+                grid_historial.addColumn(num_sem, ramo_gui);
+            }
+            num_sem+=1;
+        }
+
+
+
+
     }
 
     public void agregarSemestre(ArrayList<Ramo> ramos){

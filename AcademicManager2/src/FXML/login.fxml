@@ -7,8 +7,8 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField fx:id="tf_user" layoutX="226.0" layoutY="150.0" />
-      <PasswordField fx:id="tf_pass" layoutX="226.0" layoutY="188.0" />
+      <TextField fx:id="tf_user" layoutX="226.0" layoutY="150.0" text="cperez1" />
+      <PasswordField fx:id="tf_pass" layoutX="226.0" layoutY="188.0" text="ldasoj223" />
       <Text layoutX="175.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
       <Button fx:id="bt_reg" layoutX="300.0" layoutY="232.0" mnemonicParsing="false" text="Registrarse" />
       <Button fx:id="bt_ingresar" layoutX="226.0" layoutY="232.0" mnemonicParsing="false" text="Ingresar" />

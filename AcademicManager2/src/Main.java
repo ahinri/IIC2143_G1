@@ -116,7 +116,7 @@ public class Main extends Application {
                 for(DescriptorRamo x:cont.descriptores){if(x.id_ramo==id_ramo){desc=x;break;}}
 
                 if (teacher!=null & desc!=null){
-                    cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(0)));
+                    cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(id_ramo)));
                 }
 
                 else {System.out.println("Profesor o descriptor no encontrado");}
@@ -184,10 +184,11 @@ public class Main extends Application {
                     }
                 }
                 for (Semestre x:cont.semestres){
-                    for(String sh:semestresh.split(";"))
-                        if (String.valueOf(x.id_semestre) == sh) {
+                    for(String sh:semestresh.split(";")) {
+                        if (String.valueOf(x.id_semestre).equals(sh)) {
                             hh.semestres.add(x);
                         }
+                    }
                 }
 
                 cont.historiales.add(hh);
