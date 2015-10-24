@@ -33,16 +33,16 @@ public class Admin extends Usuario {
 		m.max_ramos_reprobados = 12; //cambiar a leer valor
 	}
 	
-	public void editarRamo(Ramo r, Profesor p,DescriptorRamo d) //en realidad se van a seleccionar
+	public void editarRamo(Ramo ramo, String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
-		r.horario = "M3"; //cambiar a leer valor
-		r.sala = "B25"; //cambiar a leer valor
-		r.seccion = 2; //cambiar a leer valor
-		r.cupos = 70; //cambiar a leer valor
-		r.anio = 2017; //cambiar a leer valor
-		r.num_semestre = 2; //cambiar a leer valor
-		r.profesor = p; //cambiar a seleccionar valor
-		r.descriptor = d; //cambiar a seleccionar valor
+		ramo.horario = horario; //cambiar a leer valor
+		ramo.sala = sala; //cambiar a leer valor
+		ramo.seccion = seccion; //cambiar a leer valor
+		ramo.cupos = cupos; //cambiar a leer valor
+		ramo.anio = anio; //cambiar a leer valor
+		ramo.num_semestre = num_semestre; //cambiar a leer valor
+		ramo.profesor = profesor; //cambiar a seleccionar valor
+		ramo.descriptor = descriptor; //cambiar a seleccionar valor
 	}
     
 }
