@@ -46,6 +46,24 @@ public class PAdmin extends Pane {
             }
         });
 
+        bt_edit_ramo.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                try {
+                    PEditarRamo pEditarRamo;
+                    pEditarRamo = new PEditarRamo(admin);
+                    Scene scene = new Scene(pEditarRamo);
+                    Stage stg=new Stage();
+                    stg.setTitle("Academic Manager");
+                    stg.setScene(scene);
+                    stg.show();
+                    pEditarRamo=(PEditarRamo)scene.getRoot();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
     }
 
 }
