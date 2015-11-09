@@ -34,7 +34,7 @@ public class PLogin extends Pane {
                 //si el login es exitoso, abrir el historial academico
                 if(login(tf_user.getText(),tf_pass.getText())){
                     try {
-                        PHistorial pHistorial=new PHistorial(get_historial(tf_user.getText()));
+                        PHistorial pHistorial=new PHistorial(get_historial(tf_user.getText(),0));
                         Scene scene = new Scene(pHistorial);
                         Stage stg=new Stage();
                         stg.setTitle("Academic Manager");
@@ -123,7 +123,10 @@ public class PLogin extends Pane {
 
     public boolean login (String user,String pass){
         //TODO: cambiar a cont.usuarios
+        System.out.println("LOGIN ALUMNO");
         for (Usuario usuarioEnLista : cont.alumnos) {
+            System.out.println("USER: "+usuarioEnLista._username);
+            System.out.println("PASS: "+usuarioEnLista._password);
         	if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
         			return true;
         	}
@@ -133,7 +136,7 @@ public class PLogin extends Pane {
         return false;
     }
 
-    public HistorialAcademico get_historial(String user){
+    public HistorialAcademico get_historial(String user,int id_malla){
         for (Alumno alumnoEnLista : cont.alumnos) {
     		if (alumnoEnLista._username.equals(user)) {
     			return alumnoEnLista.historialesAcademicos.get(0);
@@ -148,7 +151,10 @@ public class PLogin extends Pane {
     }
 
     public boolean loginAdmin (String user,String pass){
+        System.out.println("LOGIN ADMIN");
         for (Usuario usuarioEnLista : cont.administradores) {
+            System.out.println("USER: "+usuarioEnLista._username);
+            System.out.println("PASS: "+usuarioEnLista._password);
             if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
                 return true;
             }
@@ -158,7 +164,10 @@ public class PLogin extends Pane {
     }
 
     public boolean loginProfesor (String user,String pass){
+        System.out.println("LOGIN PROFESOR");
         for (Usuario usuarioEnLista : cont.profesores) {
+            System.out.println("USER: "+usuarioEnLista._username);
+            System.out.println("PASS: "+usuarioEnLista._password);
             if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
                 return true;
             }

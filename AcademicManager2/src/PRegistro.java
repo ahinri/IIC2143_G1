@@ -5,6 +5,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
@@ -30,18 +31,28 @@ public class PRegistro extends Pane {
         TextField r_rut = (TextField)this.lookup("#r_rut");
         TextField r_user = (TextField)this.lookup("#r_user");
         TextField r_pass = (TextField)this.lookup("#r_pass");
+        ComboBox combo=(ComboBox)this.lookup("#combo_malla");
+
+        for (Malla malla : cont.mallas) {
+            combo.getItems().add(malla.facultad +" "+ Integer.toString(malla.id_malla));
+        }
 
 
         btn_registro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
 
+                String[] aux=combo.getValue().toString().split(" ");
+
                 registrarse(r_nombre.getText(),
                         Integer.parseInt(r_edad.getText()),
-                        r_masc.isArmed(),
+                        r_masc.isSelected(),
                         r_rut.getText(),
                         r_user.getText(),
-                        r_pass.getText());
+                        r_pass.getText(),
+                        Integer.parseInt(aux[aux.length-1])
+
+                );
 
                 try {
                     PHistorial pHistorial=new PHistorial(get_historial(r_user.getText()));
@@ -74,7 +85,7 @@ public class PRegistro extends Pane {
         return null;
     }
 
-    public void registrarse(String nombre,int edad,boolean sexo,String rut ,String user,String password){
+    public void registrarse(String nombre,int edad,boolean sexo,String rut ,String user,String password,int id_malla){
         String sexo_string=null;
         int id_usuario=cont.usuarios.size();
         if (sexo){
@@ -86,7 +97,7 @@ public class PRegistro extends Pane {
         }
 
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
-        nuevo.crearHistorial(cont.mallas.get(0));
+        nuevo.crearHistorial(cont.mallas.get(id_malla));
 
         cont.alumnos.add(nuevo);
         cont.usuarios.add(nuevo);

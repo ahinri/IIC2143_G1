@@ -2,6 +2,7 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -11,8 +12,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
+import javafx.stage.*;
+import javafx.stage.Popup;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
@@ -34,6 +37,7 @@ public class PHistorial extends Pane {
         Button bt_add_semestre = (Button)this.lookup("#bt_add_semestre");
         Button bt_avance = (Button)this.lookup("#bt_avance");
         Button bt_busca = (Button)this.lookup("#bt_busca");
+        Button bt_cambio = (Button)this.lookup("#bt_cambio");
 
         //ids ramos
         TextField tf_idramo1 = (TextField)this.lookup("#nramo1");
@@ -42,6 +46,23 @@ public class PHistorial extends Pane {
         TextField tf_idramo4 = (TextField)this.lookup("#nramo4");
         TextField tf_idramo5 = (TextField)this.lookup("#nramo5");
         TextField tf_idramo6 = (TextField)this.lookup("#nramo6");
+        TextField tf_cambio = (TextField)this.lookup("#text_cambio");
+
+        bt_cambio.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                Stage dialog = new Stage();
+                dialog.initStyle(StageStyle.UTILITY);
+                Parent p=new Pane();
+                Scene scene = new Scene(p,300,20);
+                dialog.setScene(scene);
+                dialog.setTitle("Cambio de malla exitoso");
+                dialog.show();
+            }
+
+        });
+
+
 
 
         bt_avance.setOnAction(new EventHandler<ActionEvent>() {
@@ -120,6 +141,15 @@ public class PHistorial extends Pane {
             }
         });
 
+    }
+
+    public HistorialAcademico get_historial(String user,int id_malla){
+        for (Alumno alumnoEnLista : cont.alumnos) {
+            if (alumnoEnLista._username.equals(user)) {
+                return alumnoEnLista.historialesAcademicos.get(id_malla);
+            }
+        }
+        return null;
     }
 
     public void poblarVista() throws IOException {
