@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="41.0" layoutY="90.0" prefHeight="225.0" prefWidth="482.0">
+         <content>
+            <GridPane fx:id="grid_notas" gridLinesVisible="true" prefHeight="210.0" prefWidth="466.0">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50" />
+                    <ColumnConstraints percentWidth="50" />
+                </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="bt_calificar" layoutX="252.0" layoutY="336.0" mnemonicParsing="false" text="Calificar" />
+      <Label fx:id="label_ramo" layoutX="204.0" layoutY="36.0" prefHeight="27.0" prefWidth="155.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
