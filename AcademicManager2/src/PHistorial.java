@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -37,13 +38,37 @@ public class PHistorial extends Pane {
         Button bt_cambio = (Button)this.lookup("#bt_cambio");
 
         //ids ramos
-        TextField tf_idramo1 = (TextField)this.lookup("#nramo1");
-        TextField tf_idramo2 = (TextField)this.lookup("#nramo2");
-        TextField tf_idramo3 = (TextField)this.lookup("#nramo3");
-        TextField tf_idramo4 = (TextField)this.lookup("#nramo4");
-        TextField tf_idramo5 = (TextField)this.lookup("#nramo5");
-        TextField tf_idramo6 = (TextField)this.lookup("#nramo6");
-        TextField tf_cambio = (TextField)this.lookup("#text_cambio");
+        ComboBox combo_ramo1 = (ComboBox)this.lookup("#combo_ramo1");
+        ComboBox combo_ramo2 = (ComboBox)this.lookup("#combo_ramo2");
+        ComboBox combo_ramo3 = (ComboBox)this.lookup("#combo_ramo3");
+        ComboBox combo_ramo4 = (ComboBox)this.lookup("#combo_ramo4");
+        ComboBox combo_ramo5 = (ComboBox)this.lookup("#combo_ramo5");
+
+
+        for (Ramo r : cont.ramos) {
+            combo_ramo1.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+        }
+        combo_ramo1.getSelectionModel().select(5);
+
+        for (Ramo r : cont.ramos) {
+            combo_ramo2.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+        }
+        combo_ramo2.getSelectionModel().select(1);
+
+        for (Ramo r : cont.ramos) {
+            combo_ramo3.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+        }
+        combo_ramo3.getSelectionModel().select(2);
+
+        for (Ramo r : cont.ramos) {
+            combo_ramo4.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+        }
+        combo_ramo4.getSelectionModel().select(3);
+
+        for (Ramo r : cont.ramos) {
+            combo_ramo5.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+        }
+        combo_ramo5.getSelectionModel().select(4);
 
         bt_cambio.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -121,12 +146,11 @@ public class PHistorial extends Pane {
 
                 ArrayList<Integer> lista_ids=new ArrayList<Integer>();
                 try{
-                    lista_ids.add(Integer.parseInt(tf_idramo1.getText()));
-                    lista_ids.add(Integer.parseInt(tf_idramo2.getText()));
-                    lista_ids.add(Integer.parseInt(tf_idramo3.getText()));
-                    lista_ids.add(Integer.parseInt(tf_idramo4.getText()));
-                    lista_ids.add(Integer.parseInt(tf_idramo5.getText()));
-                    lista_ids.add(Integer.parseInt(tf_idramo6.getText()));
+                    lista_ids.add(Integer.parseInt(combo_ramo1.getValue().toString().split(" ")[0]));
+                    lista_ids.add(Integer.parseInt(combo_ramo2.getValue().toString().split(" ")[0]));
+                    lista_ids.add(Integer.parseInt(combo_ramo3.getValue().toString().split(" ")[0]));
+                    lista_ids.add(Integer.parseInt(combo_ramo4.getValue().toString().split(" ")[0]));
+                    lista_ids.add(Integer.parseInt(combo_ramo5.getValue().toString().split(" ")[0]));
 
                 }catch (Exception exx){
 
@@ -149,6 +173,17 @@ public class PHistorial extends Pane {
         return null;
     }*/
 
+    public void imprimirCampos(){
+
+        System.out.print("HISTORIAL ALUMNO ACTUAL: ");
+        System.out.println(a_actual.historial.toString());
+
+        for (Malla m:a_actual.mallas){
+            System.out.print("MALLA: ");
+            System.out.println(m.toString());
+        }
+    }
+
     public void poblarVista() throws IOException {
         System.out.print("==========EMPEZO POBLAR VISTAS===========");
 
@@ -161,6 +196,7 @@ public class PHistorial extends Pane {
         System.out.print("NUM SEMSTRES: ");
         System.out.println(ha.semestres.size());
 
+
         for (Semestre sem:ha.semestres){
 
             System.out.print("NUM RAMOS: ");
@@ -172,7 +208,12 @@ public class PHistorial extends Pane {
                 Text label_sigla=(Text)ramo_gui.lookup("#label_sigla");
                 String sigla=ramo.descriptor.sigla;
 
-                ramo_gui.setStyle("-fx-background-color: blue");
+                if(num_sem==ha.semestres.size()-1){
+                    ramo_gui.setStyle("-fx-background-color: gold");
+                }else{
+                    ramo_gui.setStyle("-fx-background-color: green");
+                }
+
 
 
 

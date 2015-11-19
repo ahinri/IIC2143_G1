@@ -46,6 +46,7 @@ public class PLogin extends Pane {
 
                         pHistorial=(PHistorial)scene.getRoot();
                         pHistorial.poblarVista();
+                        pHistorial.imprimirCampos();
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
@@ -54,6 +55,8 @@ public class PLogin extends Pane {
 
             }
         });
+
+
 
         bt_reg.setOnAction(new EventHandler<ActionEvent>() {
             @Override

@@ -42,12 +42,11 @@
       <Text layoutX="54.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDs ramos nuevos" />
       <VBox layoutX="29.0" layoutY="57.0" prefHeight="125.0" prefWidth="144.0">
          <children>
-            <TextField fx:id="nramo1" text="2" />
-            <TextField fx:id="nramo2" text="8" />
-            <TextField fx:id="nramo3" text="6" />
-            <TextField fx:id="nramo4" text="5" />
-            <TextField fx:id="nramo5" prefHeight="0.0" prefWidth="144.0" />
-            <TextField fx:id="nramo6" />
+            <ComboBox fx:id="combo_ramo1" prefWidth="150.0" />
+            <ComboBox fx:id="combo_ramo2" prefWidth="150.0" />
+            <ComboBox fx:id="combo_ramo3" prefWidth="150.0" />
+            <ComboBox fx:id="combo_ramo4" prefWidth="150.0" />
+            <ComboBox fx:id="combo_ramo5" prefWidth="150.0" />
          </children>
       </VBox>
       <TextField fx:id="text_cambio" layoutX="27.0" layoutY="482.0" text="1" />
