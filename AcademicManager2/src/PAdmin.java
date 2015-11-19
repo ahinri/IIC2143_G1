@@ -27,6 +27,7 @@ public class PAdmin extends Pane {
         Button bt_crear_ramo = (Button)this.lookup("#bt_crear_ramo");
         Button bt_edit_malla = (Button)this.lookup("#bt_edit_malla");
         Button bt_edit_ramo = (Button)this.lookup("#bt_edit_ramo");
+        Button bt_crear_desc = (Button)this.lookup("#bt_crear_desc");
 
         bt_crear_ramo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -58,6 +59,24 @@ public class PAdmin extends Pane {
                     stg.setScene(scene);
                     stg.show();
                     pEditarRamo=(PEditarRamo)scene.getRoot();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
+        bt_crear_desc.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                try {
+                    PCrearDesc pCrearDesc;
+                    pCrearDesc = new PCrearDesc(admin);
+                    Scene scene = new Scene(pCrearDesc);
+                    Stage stg=new Stage();
+                    stg.setTitle("Academic Manager");
+                    stg.setScene(scene);
+                    stg.show();
+                    pCrearDesc=(PCrearDesc)scene.getRoot();
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }

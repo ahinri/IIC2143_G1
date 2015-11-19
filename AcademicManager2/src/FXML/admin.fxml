@@ -4,12 +4,12 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="bt_crear_malla" layoutX="115.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Crear Malla" />
-      <Button fx:id="bt_crear_ramo" layoutX="115.0" layoutY="252.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Crear Ramo" />
-      <Button fx:id="bt_edit_malla" layoutX="376.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Editar Malla" />
-      <Button fx:id="bt_edit_ramo" layoutX="376.0" layoutY="252.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Editar Ramo" />
+      <Button fx:id="bt_crear_malla" layoutX="115.0" layoutY="62.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Crear Malla" />
+      <Button fx:id="bt_crear_ramo" layoutX="115.0" layoutY="175.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Crear Ramo" />
+      <Button fx:id="bt_edit_malla" layoutX="376.0" layoutY="62.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Editar Malla" />
+      <Button fx:id="bt_edit_ramo" layoutX="376.0" layoutY="175.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Editar Ramo" />
+      <Button fx:id="bt_crear_desc" layoutX="240.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Crear descriptor" />
    </children>
 </Pane>

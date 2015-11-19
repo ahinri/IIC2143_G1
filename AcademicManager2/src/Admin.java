@@ -20,7 +20,7 @@ public class Admin extends Usuario {
 		//agregarla a un catalogo de mallas?
 	}
 	
-	public void crearRamo(int nrc,String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
+	public void crearRamo(int nrc, String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
 		Ramo nuevo = new Ramo(nrc,horario, sala, seccion, cupos, anio, num_semestre, profesor, descriptor);
 		cont.ramos.add(nuevo);
@@ -43,6 +43,11 @@ public class Admin extends Usuario {
 		ramo.num_semestre = num_semestre;
 		ramo.profesor = profesor;
 		ramo.descriptor = descriptor;
+	}
+
+	public void crearDesc(String sigla, int creditos, String programa, int id) {
+		DescriptorRamo nuevo = new DescriptorRamo(sigla, creditos, programa, id);
+		cont.descriptores.add(nuevo);
 	}
     
 }

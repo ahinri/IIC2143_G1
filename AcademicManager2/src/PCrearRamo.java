@@ -66,7 +66,7 @@ public class PCrearRamo extends Pane {
             System.exit(0);
         };
 
-        admin.crearRamo(cont.ramos.size(),horario,sala,seccion,cupos,anio,semestre,profesor,descriptor);
+        admin.crearRamo(cont.ramos.size()+1,horario,sala,seccion,cupos,anio,semestre,profesor,descriptor);
     }
 
     public void poblarProf() {
