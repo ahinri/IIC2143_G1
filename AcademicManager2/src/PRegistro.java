@@ -88,6 +88,7 @@ public class PRegistro extends Pane {
     public void registrarse(String nombre,int edad,boolean sexo,String rut ,String user,String password,int id_malla){
         String sexo_string=null;
         int id_usuario=cont.usuarios.size();
+
         if (sexo){
             sexo_string="masculino";
         }
@@ -104,8 +105,8 @@ public class PRegistro extends Pane {
 
 
 
-        String query_usuarios="INSERT INTO USUARIOS VALUES('"+nombre+"',"+edad+",'"+sexo_string+"','"+rut+"',"+id_usuario+",' "+"alumno" + "','"+user+"','"+password+"')";
-
+        String query_usuarios="INSERT INTO USUARIOS VALUES('"+nombre+"',"+edad+",'"+sexo_string+"','"+rut+"','"+id_usuario+"','"+"alumno" + "','"+user+"','"+password+"')";
+        System.out.println(query_usuarios);
         try {
             cont.cargar.execute(query_usuarios);
 

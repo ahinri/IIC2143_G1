@@ -97,8 +97,7 @@ public class Main extends Application {
                 String clave=rs_alumnos.getString("clave");
                 cont.alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
                 cont.usuarios.add(new Usuario(nombre,edad,sexo,rut,id_usuario,username,clave));
-
-
+                
             }
 
             // creamos los RAMOS
