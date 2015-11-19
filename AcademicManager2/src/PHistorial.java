@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -209,7 +210,16 @@ public class PHistorial extends Pane {
 
                     @Override
                     public void handle(MouseEvent event) {
-                        Scene scene = new Scene(new Pane(new Text(ramo.descriptor.programa)));
+                        Scene scene=null;
+                        try {
+                            Parent ramo_popup=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/ramo_popup.fxml"));
+                            Label programa=(Label)ramo_popup.lookup("#label_desc");
+                            programa.setText(ramo.descriptor.programa);
+                            programa.setWrapText(true);
+                            scene=new Scene(ramo_popup);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                         Stage stg=new Stage();
                         stg.setTitle("Programa");
                         stg.setScene(scene);
