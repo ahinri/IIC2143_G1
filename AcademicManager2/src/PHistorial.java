@@ -46,27 +46,27 @@ public class PHistorial extends Pane {
 
 
         for (Ramo r : cont.ramos) {
-            combo_ramo1.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+            combo_ramo1.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
         combo_ramo1.getSelectionModel().select(5);
 
         for (Ramo r : cont.ramos) {
-            combo_ramo2.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+            combo_ramo2.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
         combo_ramo2.getSelectionModel().select(1);
 
         for (Ramo r : cont.ramos) {
-            combo_ramo3.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+            combo_ramo3.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
         combo_ramo3.getSelectionModel().select(2);
 
         for (Ramo r : cont.ramos) {
-            combo_ramo4.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+            combo_ramo4.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
         combo_ramo4.getSelectionModel().select(3);
 
         for (Ramo r : cont.ramos) {
-            combo_ramo5.getItems().add(r.descriptor.sigla +" "+ Integer.toString(r.descriptor.id_ramo));
+            combo_ramo5.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
         combo_ramo5.getSelectionModel().select(4);
 
@@ -146,16 +146,17 @@ public class PHistorial extends Pane {
 
                 ArrayList<Integer> lista_ids=new ArrayList<Integer>();
                 try{
-                    lista_ids.add(Integer.parseInt(combo_ramo1.getValue().toString().split(" ")[0]));
-                    lista_ids.add(Integer.parseInt(combo_ramo2.getValue().toString().split(" ")[0]));
-                    lista_ids.add(Integer.parseInt(combo_ramo3.getValue().toString().split(" ")[0]));
-                    lista_ids.add(Integer.parseInt(combo_ramo4.getValue().toString().split(" ")[0]));
-                    lista_ids.add(Integer.parseInt(combo_ramo5.getValue().toString().split(" ")[0]));
+                    lista_ids.add(Integer.parseInt(combo_ramo1.getValue().toString().split(" - NRC: ")[1]));
+                    lista_ids.add(Integer.parseInt(combo_ramo2.getValue().toString().split(" - NRC: ")[1]));
+                    lista_ids.add(Integer.parseInt(combo_ramo3.getValue().toString().split(" - NRC: ")[1]));
+                    lista_ids.add(Integer.parseInt(combo_ramo4.getValue().toString().split(" - NRC: ")[1]));
+                    lista_ids.add(Integer.parseInt(combo_ramo5.getValue().toString().split(" - NRC: ")[1]));
 
                 }catch (Exception exx){
 
                 }
-                //agregarSemestre(lista_ids);
+
+                agregarSemestre(lista_ids);
 
 
 
@@ -236,24 +237,32 @@ public class PHistorial extends Pane {
 
 
 
-    /*public void agregarSemestre(ArrayList<Integer> ramos){
+    public boolean agregarSemestre(ArrayList<Integer> nrcs){
         int size=cont.semestres.size();
-        Semestre nuevo= new Semestre(size);
+        Semestre nuevo= new Semestre(size+1);
         String notas="";
         String ramos_sql="";
         Ramo r=null;
-        for (Integer num: ramos){
+        System.out.print("NRCS: ");
+        System.out.println(nrcs);
+        for (Integer num: nrcs){
             for (Ramo pl:cont.ramos){
-                if (pl.descriptor.id_ramo==num){
+                if (pl.nrc==num){
                     r =pl;
                 }
             }
+            if(r.cupos<=0){
+                //TODO: FEEDBACK VISUAL NO QUEDAN CUPOS
+                return false;
+            }
+            r.cupos-=1;
             nuevo.agregarRamo(r);
             notas+="1.0;";
-            ramos_sql+=r.descriptor.id_ramo+";";
+            ramos_sql+=r.nrc+";";
         }
 
         ha.semestres.add(nuevo);
+        cont.semestres.add(nuevo);
 
         String semestres_sql="";
         for (Semestre kk:ha.semestres){
@@ -267,8 +276,11 @@ public class PHistorial extends Pane {
         }
 
         System.out.println("--------------SQL----------------");
+        System.out.println(size);
+        System.out.println(notas);
+        System.out.println(ramos_sql);
         String query_semestres="INSERT INTO semestres values("+size+"," +"'"+notas.substring(0,notas.length()-1)+"'"+","+"'"+ramos_sql.substring(0,ramos_sql.length()-1)+"'"+");";
-        String query_historiales="UPDATE historial SET semestres="+"'"+semestres_sql.substring(0,semestres_sql.length()-1)+"'"+" WHERE id_alumno="+ha.historial.id_malla+";";
+        String query_historiales="UPDATE historial SET semestres="+"'"+semestres_sql.substring(0,semestres_sql.length()-1)+"'"+" WHERE id_alumno="+a_actual.id_usuario+";";
         try {
             cont.cargar.execute(query_semestres);
             cont.cargar.execute(query_historiales);
@@ -279,8 +291,9 @@ public class PHistorial extends Pane {
             System.exit(0);
 
         }
+        return true;
 
-    }*/
+    }
 
 
 
