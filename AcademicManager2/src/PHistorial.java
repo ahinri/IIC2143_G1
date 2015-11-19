@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -204,6 +205,18 @@ public class PHistorial extends Pane {
                 Parent ramo_gui=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/ramo.fxml"));
 
                 Text label_sigla=(Text)ramo_gui.lookup("#label_sigla");
+                ramo_gui.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+                    @Override
+                    public void handle(MouseEvent event) {
+                        Scene scene = new Scene(new Pane(new Text(ramo.descriptor.programa)));
+                        Stage stg=new Stage();
+                        stg.setTitle("Programa");
+                        stg.setScene(scene);
+                        stg.show();
+
+                    }
+                });
                 String sigla=ramo.descriptor.sigla;
 
                 if(num_sem==ha.semestres.size()-1){
