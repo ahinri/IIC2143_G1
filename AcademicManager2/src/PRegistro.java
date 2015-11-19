@@ -27,26 +27,33 @@ public class PRegistro extends Pane {
 
         TextField r_nombre = (TextField)this.lookup("#r_nombre");
         TextField r_edad = (TextField)this.lookup("#r_edad");
-        RadioButton r_masc = (RadioButton)this.lookup("#r_masc");
         TextField r_rut = (TextField)this.lookup("#r_rut");
         TextField r_user = (TextField)this.lookup("#r_user");
         TextField r_pass = (TextField)this.lookup("#r_pass");
-        ComboBox combo=(ComboBox)this.lookup("#combo_malla");
+        ComboBox combo_malla=(ComboBox)this.lookup("#combo_malla");
+        ComboBox combo_sexo=(ComboBox)this.lookup("#combo_sexo");
 
         for (Malla malla : cont.mallas) {
-            combo.getItems().add(malla.facultad +" "+ Integer.toString(malla.id_malla));
+            combo_malla.getItems().add(malla.facultad +" "+ Integer.toString(malla.id_malla));
         }
+
+        combo_sexo.getItems().add("masculino");
+        combo_sexo.getItems().add("femenino");
+
+        combo_malla.getSelectionModel().selectFirst();
+        combo_sexo.getSelectionModel().selectFirst();
 
 
         btn_registro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
 
-                String[] aux=combo.getValue().toString().split(" ");
+                String[] aux=combo_malla.getValue().toString().split(" ");
+
 
                 registrarse(r_nombre.getText(),
                         Integer.parseInt(r_edad.getText()),
-                        r_masc.isSelected(),
+                        combo_sexo.getValue().toString(),
                         r_rut.getText(),
                         r_user.getText(),
                         r_pass.getText(),
@@ -55,8 +62,8 @@ public class PRegistro extends Pane {
                 );
 
                 try {
-                    PHistorial pHistorial=new PHistorial(get_historial(r_user.getText()));
-                    Scene scene = new Scene(pHistorial);
+                    PLogin plogin =new PLogin();
+                    Scene scene = new Scene(plogin);
                     Stage stg=new Stage();
                     stg.setTitle("Academic Manager");
                     stg.setScene(scene);
@@ -64,8 +71,7 @@ public class PRegistro extends Pane {
 
                     ((Node)(e.getSource())).getScene().getWindow().hide();
 
-                    pHistorial=(PHistorial)scene.getRoot();
-                    pHistorial.poblarVista();
+
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
@@ -85,17 +91,9 @@ public class PRegistro extends Pane {
         return null;
     }
 
-    public void registrarse(String nombre,int edad,boolean sexo,String rut ,String user,String password,int id_malla){
-        String sexo_string=null;
+    public void registrarse(String nombre,int edad,String sexo_string,String rut ,String user,String password,int id_malla){
         int id_usuario=cont.usuarios.size();
 
-        if (sexo){
-            sexo_string="masculino";
-        }
-        else{
-            sexo_string="femenino";
-
-        }
 
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
         nuevo.crearHistorial(cont.mallas.get(id_malla));

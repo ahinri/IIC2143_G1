@@ -32,9 +32,10 @@ public class PLogin extends Pane {
             public void handle(ActionEvent e) {
 
                 //si el login es exitoso, abrir el historial academico
-                if(login(tf_user.getText(),tf_pass.getText())){
+                Alumno a_ingresando=login(tf_user.getText(),tf_pass.getText());
+                if(a_ingresando!=null){
                     try {
-                        PHistorial pHistorial=new PHistorial(get_historial(tf_user.getText(),0));
+                        PHistorial pHistorial=new PHistorial(a_ingresando);
                         Scene scene = new Scene(pHistorial);
                         Stage stg=new Stage();
                         stg.setTitle("Academic Manager");
@@ -121,19 +122,19 @@ public class PLogin extends Pane {
 
     }
 
-    public boolean login (String user,String pass){
+    public Alumno login (String user,String pass){
         //TODO: cambiar a cont.usuarios
         System.out.println("LOGIN ALUMNO");
-        for (Usuario usuarioEnLista : cont.alumnos) {
+        for (Alumno usuarioEnLista : cont.alumnos) {
             System.out.println("USER: "+usuarioEnLista._username);
             System.out.println("PASS: "+usuarioEnLista._password);
         	if (usuarioEnLista._username.equals(user) && usuarioEnLista._password.equals(pass) ) {
-        			return true;
+        			return usuarioEnLista;
         	}
         }
         System.out.println("---------------");
         notificarErrorLogin();
-        return false;
+        return null;
     }
 
     public HistorialAcademico get_historial(String user,int id_malla){

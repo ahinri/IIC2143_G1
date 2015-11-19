@@ -27,9 +27,11 @@ public class PHistorial extends Pane {
     Contenido cont =Contenido.getMi_instancia();
 
     HistorialAcademico ha=null;
+    Alumno a_actual=null;
 
-    public PHistorial(HistorialAcademico ha) throws IOException {
-        this.ha=ha;
+    public PHistorial(Alumno a_actual) throws IOException {
+        this.a_actual=a_actual;
+        this.ha=a_actual.historialesAcademicos.get(0);
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
 
