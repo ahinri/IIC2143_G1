@@ -108,8 +108,7 @@ public class PRegistro extends Pane {
 
         String query_usuarios="INSERT INTO USUARIOS VALUES('"+nombre+"',"+edad+",'"+sexo_string+"','"+rut+"','"+id_usuario+"','"+"alumno" + "','"+user+"','"+password+"')";
         String query_historiales="INSERT INTO HISTORIAL VALUES("+id_usuario+",';');";
-        System.out.println(query_usuarios);
-        System.out.println(query_historiales);
+     
 
         try {
             cont.cargar.execute(query_usuarios);
