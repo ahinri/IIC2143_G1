@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -194,8 +193,6 @@ public class PHistorial extends Pane {
 
         int num_sem=0;
 
-        System.out.print("NUM SEMSTRES: ");
-        System.out.println(ha.semestres.size());
 
 
         for (Semestre sem:ha.semestres){
@@ -238,8 +235,8 @@ public class PHistorial extends Pane {
 
 
     public boolean agregarSemestre(ArrayList<Integer> nrcs){
-        int size=cont.semestres.size();
-        Semestre nuevo= new Semestre(size+1);
+        int size=cont.semestres.size()+1;
+        Semestre nuevo= new Semestre(size);
         String notas="";
         String ramos_sql="";
         Ramo r=null;

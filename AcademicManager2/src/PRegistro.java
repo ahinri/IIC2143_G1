@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -92,7 +91,7 @@ public class PRegistro extends Pane {
     }*/
 
     public void registrarse(String nombre,int edad,String sexo_string,String rut ,String user,String password,int id_malla){
-        int id_usuario=cont.usuarios.size();
+        int id_usuario=cont.usuarios.size()+1;
 
 
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
