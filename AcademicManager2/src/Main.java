@@ -97,7 +97,7 @@ public class Main extends Application {
                 String clave=rs_alumnos.getString("clave");
                 cont.alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
                 cont.usuarios.add(new Usuario(nombre,edad,sexo,rut,id_usuario,username,clave));
-                
+
             }
 
             // creamos los RAMOS
@@ -125,6 +125,21 @@ public class Main extends Application {
                     cont.ramos.add(new Ramo(nrc,horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(id_ramo)));
                 }
                 else {System.out.println("Profesor o descriptor no encontrado");}
+
+                for (String x:id_alumnos.split(";")){
+                    Alumno tomar=null;
+                    for(Alumno xx:cont.alumnos) {
+                        if (xx.id_usuario==Integer.parseInt(x)){
+                            tomar=xx;
+                        }
+                    }
+                    for(Ramo p:cont.ramos){
+                        if(p.nrc==nrc){
+                            p.lista_alumnos.add(tomar);
+                            break;
+                        }
+                    }
+                };
 
             }
 

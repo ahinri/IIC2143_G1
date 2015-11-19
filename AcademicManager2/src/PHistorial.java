@@ -54,22 +54,21 @@ public class PHistorial extends Pane {
         for (Ramo r : cont.ramos) {
             combo_ramo2.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
-        combo_ramo2.getSelectionModel().select(1);
 
         for (Ramo r : cont.ramos) {
             combo_ramo3.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
-        combo_ramo3.getSelectionModel().select(2);
+
 
         for (Ramo r : cont.ramos) {
             combo_ramo4.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
-        combo_ramo4.getSelectionModel().select(3);
+
 
         for (Ramo r : cont.ramos) {
             combo_ramo5.getItems().add(r.descriptor.sigla +" - NRC: "+ Integer.toString(r.nrc));
         }
-        combo_ramo5.getSelectionModel().select(4);
+
 
         bt_cambio.setOnAction(new EventHandler<ActionEvent>() {
             @Override
