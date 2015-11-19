@@ -49,16 +49,24 @@ public class PCrearRamo extends Pane {
         String sala = txtf.getText();
         txtf = (TextField)this.lookup("txt_seccion");
         int seccion = Integer.parseInt(txtf.getText());
-        txtf = (TextField)this.lookup("txt_cupos");
+        txtf = (TextField)this.lookup("#txt_cupos");
         int cupos = Integer.parseInt(txtf.getText());
-        txtf = (TextField)this.lookup("txt_anio");
+        txtf = (TextField)this.lookup("#txt_anio");
         int anio = Integer.parseInt(txtf.getText());
-        txtf = (TextField)this.lookup("txt_semestre");
+        txtf = (TextField)this.lookup("#txt_semestre");
         int semestre = Integer.parseInt(txtf.getText());
         ComboBox combo = (ComboBox)this.lookup("#combo_prof");
         Profesor profesor = getProfesor(combo.getValue().toString());
         combo = (ComboBox)this.lookup("#combo_desc");
         DescriptorRamo descriptor = getDescriptor(combo.getValue().toString());
+
+        String q = "INSERT INTO ramos VALUES (" + descriptor.id_ramo + ",'" + horario + "','" + sala + "'," + seccion + "," + cupos + "," + anio + "," + semestre + "," + profesor.id_usuario + ");" ;
+        try{cont.cargar.execute(q);}
+        catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        };
+
         admin.crearRamo(horario,sala,seccion,cupos,anio,semestre,profesor,descriptor);
     }
 

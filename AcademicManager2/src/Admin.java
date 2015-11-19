@@ -35,14 +35,14 @@ public class Admin extends Usuario {
 	
 	public void editarRamo(Ramo ramo, String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
-		ramo.horario = horario; //cambiar a leer valor
-		ramo.sala = sala; //cambiar a leer valor
-		ramo.seccion = seccion; //cambiar a leer valor
-		ramo.cupos = cupos; //cambiar a leer valor
-		ramo.anio = anio; //cambiar a leer valor
-		ramo.num_semestre = num_semestre; //cambiar a leer valor
-		ramo.profesor = profesor; //cambiar a seleccionar valor
-		ramo.descriptor = descriptor; //cambiar a seleccionar valor
+		ramo.horario = horario;
+		ramo.sala = sala;
+		ramo.seccion = seccion;
+		ramo.cupos = cupos;
+		ramo.anio = anio;
+		ramo.num_semestre = num_semestre;
+		ramo.profesor = profesor;
+		ramo.descriptor = descriptor;
 	}
     
 }
