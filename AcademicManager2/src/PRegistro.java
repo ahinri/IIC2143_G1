@@ -92,20 +92,28 @@ public class PRegistro extends Pane {
 
     public void registrarse(String nombre,int edad,String sexo_string,String rut ,String user,String password,int id_malla){
         int id_usuario=cont.usuarios.size()+1;
-
-
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
         nuevo.agregarMalla(cont.mallas.get(id_malla));
+
+
 
         cont.alumnos.add(nuevo);
         cont.usuarios.add(nuevo);
 
 
 
+
+
+
+
         String query_usuarios="INSERT INTO USUARIOS VALUES('"+nombre+"',"+edad+",'"+sexo_string+"','"+rut+"','"+id_usuario+"','"+"alumno" + "','"+user+"','"+password+"')";
+        String query_historiales="INSERT INTO HISTORIAL VALUES("+id_usuario+",';');";
         System.out.println(query_usuarios);
+        System.out.println(query_historiales);
+
         try {
             cont.cargar.execute(query_usuarios);
+            cont.cargar.execute(query_historiales);
 
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
