@@ -14,9 +14,11 @@ public class Ramo {
 	public Profesor profesor;
 	public DescriptorRamo descriptor;
 	public List<Alumno> lista_alumnos;
+	public int nrc;
 
-	public Ramo(String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
+	public Ramo(int nrc,String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
 	{
+		this.nrc=nrc;
 		this.horario = horario;
 		this.sala = sala;
 		this.seccion = seccion;

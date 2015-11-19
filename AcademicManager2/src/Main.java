@@ -112,6 +112,7 @@ public class Main extends Application {
                 int anio=rs_ramos.getInt("año");
                 int semestre=rs_ramos.getInt("semestre");
                 int id_profesor=rs_ramos.getInt("id_profesor");
+                int nrc=rs_ramos.getInt("nrc");
                 String id_alumnos=rs_ramos.getString("alumnos");
 
 
@@ -121,7 +122,7 @@ public class Main extends Application {
                 for(DescriptorRamo x:cont.descriptores){if(x.id_ramo==id_ramo){desc=x;break;}}
 
                 if (teacher!=null & desc!=null){
-                    cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(id_ramo)));
+                    cont.ramos.add(new Ramo(nrc,horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(id_ramo)));
                 }
                 else {System.out.println("Profesor o descriptor no encontrado");}
 
