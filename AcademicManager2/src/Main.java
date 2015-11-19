@@ -62,6 +62,7 @@ public class Main extends Application {
                 String username=rs_profesores.getString("username");
                 String clave=rs_profesores.getString("clave");
                 cont.profesores.add(new Profesor(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.usuarios.add(new Usuario(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -78,6 +79,7 @@ public class Main extends Application {
                 String username=rs_admins.getString("username");
                 String clave=rs_admins.getString("clave");
                 cont.administradores.add(new Admin(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.usuarios.add(new Usuario(nombre,edad,sexo,rut,id_usuario,username,clave));
 
             }
 
@@ -94,6 +96,7 @@ public class Main extends Application {
                 String username=rs_alumnos.getString("username");
                 String clave=rs_alumnos.getString("clave");
                 cont.alumnos.add(new Alumno(nombre,edad,sexo,rut,id_usuario,username,clave));
+                cont.usuarios.add(new Usuario(nombre,edad,sexo,rut,id_usuario,username,clave));
 
 
             }
@@ -121,9 +124,7 @@ public class Main extends Application {
                 if (teacher!=null & desc!=null){
                     cont.ramos.add(new Ramo(horario,sala,seccion,cupos,anio,semestre,teacher,cont.descriptores.get(id_ramo)));
                 }
-
                 else {System.out.println("Profesor o descriptor no encontrado");}
-
 
             }
 
