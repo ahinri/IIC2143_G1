@@ -21,6 +21,9 @@ public class HistorialAcademico {
         }
 
     }
+    public void agregarSemestreHecho(Semestre s){
+        semestres.add(s);
+    }
     /*
     public void avance(){
     	ArrayList<Ramo> aux= new ArrayList<>();

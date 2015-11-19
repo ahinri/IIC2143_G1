@@ -2,22 +2,17 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
-import javafx.stage.*;
-import javafx.stage.Popup;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-import javax.swing.*;
 import java.io.IOException;
-import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
 
 /**
@@ -31,7 +26,7 @@ public class PHistorial extends Pane {
 
     public PHistorial(Alumno a_actual) throws IOException {
         this.a_actual=a_actual;
-        this.ha=a_actual.historialesAcademicos.get(0);
+        this.ha=a_actual.historial;
         Parent a=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/historial_academico.fxml"));
         this.getChildren().add(a);
 
@@ -136,7 +131,7 @@ public class PHistorial extends Pane {
                 }catch (Exception exx){
 
                 }
-                agregarSemestre(lista_ids);
+                //agregarSemestre(lista_ids);
 
 
 
@@ -144,7 +139,7 @@ public class PHistorial extends Pane {
         });
 
     }
-
+/*
     public HistorialAcademico get_historial(String user,int id_malla){
         for (Alumno alumnoEnLista : cont.alumnos) {
             if (alumnoEnLista._username.equals(user)) {
@@ -152,7 +147,7 @@ public class PHistorial extends Pane {
             }
         }
         return null;
-    }
+    }*/
 
     public void poblarVista() throws IOException {
         System.out.print("==========EMPEZO POBLAR VISTAS===========");
@@ -197,7 +192,10 @@ public class PHistorial extends Pane {
 
 
     //TODO: no testeado
-    public void agregarSemestre(ArrayList<Integer> ramos){
+
+
+
+    /*public void agregarSemestre(ArrayList<Integer> ramos){
         int size=cont.semestres.size();
         Semestre nuevo= new Semestre(size);
         String notas="";
@@ -229,7 +227,7 @@ public class PHistorial extends Pane {
 
         System.out.println("--------------SQL----------------");
         String query_semestres="INSERT INTO semestres values("+size+"," +"'"+notas.substring(0,notas.length()-1)+"'"+","+"'"+ramos_sql.substring(0,ramos_sql.length()-1)+"'"+");";
-        String query_historiales="UPDATE historial SET semestres="+"'"+semestres_sql.substring(0,semestres_sql.length()-1)+"'"+" WHERE  id_alumno="+ha.malla.id_malla+";";
+        String query_historiales="UPDATE historial SET semestres="+"'"+semestres_sql.substring(0,semestres_sql.length()-1)+"'"+" WHERE id_alumno="+ha.historial.id_malla+";";
         try {
             cont.cargar.execute(query_semestres);
             cont.cargar.execute(query_historiales);
@@ -241,7 +239,7 @@ public class PHistorial extends Pane {
 
         }
 
-    }
+    }*/
 
 
 

@@ -136,7 +136,7 @@ public class PLogin extends Pane {
         notificarErrorLogin();
         return null;
     }
-
+    /*
     public HistorialAcademico get_historial(String user,int id_malla){
         for (Alumno alumnoEnLista : cont.alumnos) {
     		if (alumnoEnLista._username.equals(user)) {
@@ -144,8 +144,9 @@ public class PLogin extends Pane {
     		}
     	}
         return null;
-    }
 
+    }
+*/
     public void notificarErrorLogin(){
         Text label_error = (Text)this.lookup("#label_error");
         label_error.setText("Usuario o contrasena incorrecto");

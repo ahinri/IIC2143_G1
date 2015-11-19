@@ -1,14 +1,12 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -41,14 +39,14 @@ public class PCalificar extends Pane {
         bt_calificar.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                calificarRamo();
+                //calificarRamo();
                 Stage stage = (Stage) bt_calificar.getScene().getWindow();
                 stage.close();
             }
         });
 
     }
-
+/*
     public void calificarRamo() {
         for (Alumno alumno : alumnos) {
             int index = alumnos.indexOf(alumno);
@@ -66,6 +64,7 @@ public class PCalificar extends Pane {
             }
         }
     }
+    */
 
     public void poblarLista() throws IOException {
         GridPane grid_notas = (GridPane)this.lookup("#grid_notas");

@@ -1,6 +1,5 @@
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -50,7 +49,7 @@ public class PAvance extends Pane {
                 }
             }
         }
-
+        /*
         for (Ramo ramoMalla : ha.malla.ramos) {
             String sigla = ramoMalla.descriptor.sigla;
             if (!cursosAprobados.contains(sigla)) {
@@ -59,6 +58,7 @@ public class PAvance extends Pane {
                 }
             }
         }
+        */
 
         Parent header1_gui = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/ramo.fxml"));
         Text label1_sigla = (Text)header1_gui.lookup("#label_sigla");

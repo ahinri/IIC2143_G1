@@ -177,29 +177,25 @@ public class Main extends Application {
             while (rs_historial.next()){
                 int id_alumnoh=rs_historial.getInt("id_alumno");
                 String semestresh = rs_historial.getString("semestres");
-                HistorialAcademico hh=null;
-                Semestre s=null;
 
-                for (Malla x : cont.mallas){
-                    if(x.id_malla==id_alumnoh){
-                        hh=new HistorialAcademico();
-                        break;
+                Alumno alm=null;
+
+                for (Alumno al:cont.alumnos){
+                    if (al.id_usuario==id_alumnoh){
+                        alm=al;
                     }
                 }
+
                 for (Semestre x:cont.semestres){
                     for(String sh:semestresh.split(";")) {
                         if (String.valueOf(x.id_semestre).equals(sh)) {
-                            hh.semestres.add(x);
+                            alm.rellenar_historial(x);
                         }
                     }
                 }
 
-                cont.historiales.add(hh);
-                for (Alumno al:cont.alumnos){
-                    if (al.id_usuario==id_alumnoh){
-                        al.historialesAcademicos.add(hh);
-                    }
-                }
+                cont.historiales.add(alm.historial);
+
             }
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );

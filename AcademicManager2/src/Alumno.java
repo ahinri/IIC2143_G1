@@ -30,4 +30,11 @@ public class Alumno extends Usuario{
         }
         return false;
     }
+
+    public void rellenar_historial(Semestre s){
+        this.historial.agregarSemestreHecho(s);
+
+
+    }
+
 }
