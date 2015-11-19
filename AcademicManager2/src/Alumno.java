@@ -7,15 +7,16 @@ import java.util.List;
 public class Alumno extends Usuario{
 
     //para la pr�xima entrega, esta asignacion
-    public ArrayList<HistorialAcademico> historialesAcademicos= new ArrayList<HistorialAcademico>();
+    public HistorialAcademico historial= new HistorialAcademico();
+    public ArrayList<Malla> mallas= new ArrayList<>();
 
     public Alumno(String nombre, int edad, String sexo, String rut,int id_usuario,String username,String password) {
         super(nombre, edad, sexo, rut,id_usuario,username,password);
 
     }
 
-    public void crearHistorial(Malla malla){
-        historialesAcademicos.add(new HistorialAcademico(malla));
+    public void agregarMalla(Malla m){
+        mallas.add(m);
     }
 
     public boolean registrarse(String user,String pass){

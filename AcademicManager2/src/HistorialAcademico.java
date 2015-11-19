@@ -5,13 +5,9 @@ import java.util.*;
  */
 public class HistorialAcademico {
 
-    Malla malla;
     int sem_actual=0;
     ArrayList<Semestre> semestres=new ArrayList<>();
 
-    public HistorialAcademico(Malla malla){
-        this.malla=malla;
-    }
 
     public boolean agregarSemestre(int id_semestre){
         try{
@@ -25,8 +21,7 @@ public class HistorialAcademico {
         }
 
     }
-    
-    
+    /*
     public void avance(){
     	ArrayList<Ramo> aux= new ArrayList<>();
         ArrayList<Ramo> hechos= new ArrayList<>();
@@ -52,5 +47,5 @@ public class HistorialAcademico {
     	
     	
     	
-    }
+    }*/
 }

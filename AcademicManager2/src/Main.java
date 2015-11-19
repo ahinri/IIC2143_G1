@@ -182,7 +182,7 @@ public class Main extends Application {
 
                 for (Malla x : cont.mallas){
                     if(x.id_malla==id_alumnoh){
-                        hh=new HistorialAcademico(x);
+                        hh=new HistorialAcademico();
                         break;
                     }
                 }

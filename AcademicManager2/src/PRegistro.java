@@ -81,7 +81,7 @@ public class PRegistro extends Pane {
         });
 
     }
-
+/*
     public HistorialAcademico get_historial(String user){
         for (Alumno alumnoEnLista : cont.alumnos) {
             if (alumnoEnLista._username.equals(user)) {
@@ -89,14 +89,14 @@ public class PRegistro extends Pane {
             }
         }
         return null;
-    }
+    }*/
 
     public void registrarse(String nombre,int edad,String sexo_string,String rut ,String user,String password,int id_malla){
         int id_usuario=cont.usuarios.size();
 
 
         Alumno nuevo=new Alumno(nombre,edad,sexo_string,rut,id_usuario,user,password);
-        nuevo.crearHistorial(cont.mallas.get(id_malla));
+        nuevo.agregarMalla(cont.mallas.get(id_malla));
 
         cont.alumnos.add(nuevo);
         cont.usuarios.add(nuevo);
