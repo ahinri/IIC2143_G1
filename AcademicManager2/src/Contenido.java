@@ -27,6 +27,7 @@ public class Contenido {
     ArrayList<Malla> mallas=new ArrayList<Malla>();
     ArrayList<HistorialAcademico> historiales= new ArrayList<HistorialAcademico>();
     ArrayList<Usuario> usuarios=new ArrayList<Usuario>();
+    ArrayList<String []> comentarios=new ArrayList<>();
 
     ArrayList<DescriptorRamo> avanze_descriptor_ramos= new ArrayList<DescriptorRamo>();
     ArrayList<Double> avanze_notas= new ArrayList<Double>();
