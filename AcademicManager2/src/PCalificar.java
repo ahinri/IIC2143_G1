@@ -93,11 +93,22 @@ public class PCalificar extends Pane {
             label_nombre.setText(alumno.nombre);
             grid_notas.add(label_nombre, 0, index);
             TextField txtf_nota = new TextField("");
-            txtf_nota.setText("0.0");
+            double nota = getNota(alumno);
+            txtf_nota.setText(String.valueOf(nota));
             grid_notas.add(txtf_nota, 1, index);
             textfields.add(index, txtf_nota);
             index++;
         }
+    }
+
+    public double getNota(Alumno alumno) {
+        for (int i = alumno.historial.semestres.size() - 1; i > -1; i--) {
+            Semestre semestre = alumno.historial.semestres.get(i);
+            int indexRamo = semestre.ramos.indexOf(ramo);
+            if (indexRamo > -1)
+                return semestre.notas.get(indexRamo);
+        }
+        return 0.0;
     }
 
 }

@@ -17,8 +17,6 @@ public class Semestre {
     public boolean agregarRamo(Ramo ramo){
         try{
             ramos.add(ramo);
-            //el profesor debe calificar al alumno
-            notas.add(1.0);
             return true;
         }
         catch (Exception e){
