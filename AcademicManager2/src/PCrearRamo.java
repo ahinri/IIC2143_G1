@@ -46,7 +46,7 @@ public class PCrearRamo extends Pane {
         String horario = txtf.getText();
         txtf = (TextField)this.lookup("#txt_sala");
         String sala = txtf.getText();
-        txtf = (TextField)this.lookup("txt_seccion");
+        txtf = (TextField)this.lookup("#txt_seccion");
         int seccion = Integer.parseInt(txtf.getText());
         txtf = (TextField)this.lookup("#txt_cupos");
         int cupos = Integer.parseInt(txtf.getText());
@@ -59,7 +59,7 @@ public class PCrearRamo extends Pane {
         combo = (ComboBox)this.lookup("#combo_desc");
         DescriptorRamo descriptor = getDescriptor(combo.getValue().toString());
 
-        String q = "INSERT INTO ramos VALUES (" + descriptor.id_ramo + ",'" + horario + "','" + sala + "'," + seccion + "," + cupos + "," + anio + "," + semestre + "," + profesor.id_usuario + ");" ;
+        String q = "INSERT INTO ramos VALUES (" + descriptor.id_ramo + ",'" + horario + "','" + sala + "'," + seccion + "," + cupos + "," + anio + "," + semestre + "," + profesor.id_usuario + ", ';' ," + cont.ramos.size()+1 + ");" ;
         try{cont.cargar.execute(q);}
         catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
