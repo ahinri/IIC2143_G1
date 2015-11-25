@@ -313,6 +313,30 @@ public class PHistorial extends Pane {
         return true;
 
     }
+    public ArrayList<String[] > obtenerComentarios(int nrc) {
+        ArrayList<String[]> answ=new ArrayList<>();
+        for(String[] datax:cont.comentarios){
+            if (datax[0].equals(Integer.toString(nrc))){
+                answ.add(new String[]{datax[1],datax[2]});
+            }
+        }
+        return answ;
+    }
+
+    public void guardarComentario(int nrc,String comentario,String usuario) {
+
+        cont.comentarios.add(new String[]{Integer.toString(nrc),comentario,usuario});
+        String query_foro="INSERT INTO foro VALUES ("+nrc+", '"+comentario+"'"+",'"+usuario+"');";
+        try {
+            cont.cargar.execute(query_foro);
+
+        } catch ( Exception e ) {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+
+        }
+
+    }
 
 
 

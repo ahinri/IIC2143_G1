@@ -213,7 +213,7 @@ public class Main extends Application {
                 cont.historiales.add(alm.historial);
             }
 
-            //creamos los Historiales
+            //creamos los comentarios de foros
 
             String consulta_foro="Select * from foro;";
             ResultSet rs_foro=statement1.executeQuery(consulta_foro);
@@ -222,11 +222,9 @@ public class Main extends Application {
                 String comentario = rs_foro.getString("comentario");
                 String usuario=rs_foro.getString("usuario");
 
-
-
-
                 cont.comentarios.add(new String[]{Integer.toString(nrc_coment),comentario,usuario});
             }
+
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
