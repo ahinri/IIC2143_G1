@@ -65,6 +65,24 @@ public class PAdmin extends Pane {
             }
         });
 
+        bt_crear_malla.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                try {
+                    PCrearMalla pCrearMalla;
+                    pCrearMalla = new PCrearMalla(admin);
+                    Scene scene = new Scene(pCrearMalla);
+                    Stage stg=new Stage();
+                    stg.setTitle("Academic Manager");
+                    stg.setScene(scene);
+                    stg.show();
+                    pCrearMalla=(PCrearMalla)scene.getRoot();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
         bt_crear_desc.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {

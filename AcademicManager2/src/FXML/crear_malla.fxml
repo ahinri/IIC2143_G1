@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="26.0" layoutY="33.0" text="Maximo de creditos por semestre" />
+      <TextField fx:id="txtf_creditos" layoutX="41.0" layoutY="59.0" />
+      <TextField fx:id="txtf_reprobados" layoutX="409.0" layoutY="59.0" />
+      <Label layoutX="403.0" layoutY="34.0" text="Maximo de ramos reprobados" />
+      <Label layoutX="280.0" layoutY="34.0" text="Carrera" />
+      <TextField fx:id="txtf_carrera" layoutX="226.0" layoutY="59.0" />
+      <ScrollPane fitToHeight="true" layoutX="53.0" layoutY="140.0" prefHeight="200.0" prefWidth="112.0">
+         <content>
+            <Text fx:id="text_ramos" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </content></ScrollPane>
+      <Label layoutX="61.0" layoutY="112.0" text="Ramos en la malla" />
+      <Label layoutX="248.0" layoutY="112.0" text="Ramos no incluidos" />
+      <ComboBox fx:id="combo_ramos_add" layoutX="225.0" layoutY="140.0" prefWidth="150.0" />
+      <Button fx:id="bt_ramos_add" layoutX="244.0" layoutY="185.0" mnemonicParsing="false" text="Agregar a la malla" />
+      <Button fx:id="bt_crear" layoutX="400.0" layoutY="295.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="Crear Malla" />
+      <Button fx:id="bt_ramos_remove" layoutX="427.0" layoutY="185.0" mnemonicParsing="false" text="Quitar de la malla" />
+      <ComboBox fx:id="combo_ramos_remove" layoutX="408.0" layoutY="140.0" prefWidth="150.0" />
+      <Label layoutX="440.0" layoutY="112.0" text="Ramos incluidos" />
+   </children>
+</Pane>

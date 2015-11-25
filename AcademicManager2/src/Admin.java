@@ -9,15 +9,14 @@ public class Admin extends Usuario {
 		super(nombre, edad, sexo, rut,id_usuario,username,password);
 	}
 
-	public void crearMalla()
+	public void crearMalla(int max_creditos_semestre, String carrera, int max_ramos_reprobados, int id_malla, String[] siglas)
 	{
-		int max_creditos_semestre = 50; //cambiar a leer valor
-		String facultad = "Ingenieria"; //cambiar a leer valor
-		int max_ramos_reprobados = 10; //cambiar a leer valor
-		int id_malla=1;
-		Malla nueva = new Malla(max_creditos_semestre, facultad, max_ramos_reprobados,id_malla);
-		boolean agregandoRamos = true;
-		//agregarla a un catalogo de mallas?
+		Malla nueva = new Malla(max_creditos_semestre, carrera, max_ramos_reprobados, id_malla);
+		for (String sigla : siglas) {
+			DescriptorRamo descriptor = getDescriptor(sigla);
+			nueva.agregar_ramos(descriptor);
+		}
+		cont.mallas.add(nueva);
 	}
 	
 	public void crearRamo(int nrc, String horario, String sala, int seccion, int cupos, int anio, int num_semestre, Profesor profesor, DescriptorRamo descriptor)
@@ -29,7 +28,7 @@ public class Admin extends Usuario {
 	public void editarMalla(Malla m)
 	{
 		m.max_creditos_semestre = 60; //cambiar a leer valor
-		m.facultad = "Psicologia"; //cambiar a leer valor
+		m.carrera = "Psicologia"; //cambiar a leer valor
 		m.max_ramos_reprobados = 12; //cambiar a leer valor
 	}
 	
@@ -48,6 +47,15 @@ public class Admin extends Usuario {
 	public void crearDesc(String sigla, int creditos, String programa, int id) {
 		DescriptorRamo nuevo = new DescriptorRamo(sigla, creditos, programa, id);
 		cont.descriptores.add(nuevo);
+	}
+
+	public DescriptorRamo getDescriptor(String sigla) {
+		for (DescriptorRamo desc : cont.descriptores) {
+			if (desc.sigla.equals(sigla)) {
+				return desc;
+			}
+		}
+		return null;
 	}
     
 }

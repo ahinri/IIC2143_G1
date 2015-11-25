@@ -29,7 +29,6 @@ public class PCrearRamo extends Pane {
         poblarProf();
         poblarDesc();
 
-
         bt_crear.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
@@ -59,14 +58,14 @@ public class PCrearRamo extends Pane {
         combo = (ComboBox)this.lookup("#combo_desc");
         DescriptorRamo descriptor = getDescriptor(combo.getValue().toString());
 
-        String q = "INSERT INTO ramos VALUES (" + descriptor.id_ramo + ",'" + horario + "','" + sala + "'," + seccion + "," + cupos + "," + anio + "," + semestre + "," + profesor.id_usuario + ", ';' ," + cont.ramos.size()+1 + ");" ;
+        String q = "INSERT INTO ramos VALUES (" + descriptor.id_ramo + ",'" + horario + "','" + sala + "'," + seccion + "," + cupos + "," + anio + "," + semestre + "," + profesor.id_usuario + ", ';' ," + cont.ramos.size() + ");" ;
         try{cont.cargar.execute(q);}
         catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         };
 
-        admin.crearRamo(cont.ramos.size()+1,horario,sala,seccion,cupos,anio,semestre,profesor,descriptor);
+        admin.crearRamo(cont.ramos.size(),horario,sala,seccion,cupos,anio,semestre,profesor,descriptor);
     }
 
     public void poblarProf() {

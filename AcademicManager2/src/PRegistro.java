@@ -33,7 +33,7 @@ public class PRegistro extends Pane {
         ComboBox combo_sexo=(ComboBox)this.lookup("#combo_sexo");
 
         for (Malla malla : cont.mallas) {
-            combo_malla.getItems().add(malla.facultad +" "+ Integer.toString(malla.id_malla));
+            combo_malla.getItems().add(malla.carrera +" "+ Integer.toString(malla.id_malla));
         }
 
         combo_sexo.getItems().add("masculino");
