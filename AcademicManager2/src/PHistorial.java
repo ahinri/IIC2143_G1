@@ -38,7 +38,6 @@ public class PHistorial extends Pane {
         Button bt_add_semestre = (Button)this.lookup("#bt_add_semestre");
         Button bt_avance = (Button)this.lookup("#bt_avance");
         Button bt_busca = (Button)this.lookup("#bt_busca");
-        Button bt_cambio = (Button)this.lookup("#bt_cambio");
 
         //ids ramos
         ComboBox combo_ramo1 = (ComboBox)this.lookup("#combo_ramo1");
@@ -72,19 +71,7 @@ public class PHistorial extends Pane {
         }
 
 
-        bt_cambio.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
-                Stage dialog = new Stage();
-                dialog.initStyle(StageStyle.UTILITY);
-                Parent p=new Pane();
-                Scene scene = new Scene(p,300,20);
-                dialog.setScene(scene);
-                dialog.setTitle("Cambio de malla exitoso");
-                dialog.show();
-            }
 
-        });
 
 
 
