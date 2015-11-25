@@ -4,12 +4,14 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -211,18 +213,22 @@ public class PHistorial extends Pane {
                     public void handle(MouseEvent event) {
                         Scene scene=null;
                         try {
-                            Parent ramo_popup=FXMLLoader.load(getClass().getClassLoader().getResource("FXML/ramo_popup.fxml"));
-                            Label programa=(Label)ramo_popup.lookup("#label_desc");
-                            programa.setText(ramo.descriptor.programa);
-                            programa.setWrapText(true);
+
+                            PPopupRamo ramo_popup=new PPopupRamo(ramo,a_actual);
                             scene=new Scene(ramo_popup);
+                            Stage stg=new Stage();
+                            stg.setTitle("Programa");
+                            stg.setScene(scene);
+                            stg.show();
+
+                            ramo_popup=(PPopupRamo)scene.getRoot();
+                            ramo_popup.poblarVista();
+
+
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                        Stage stg=new Stage();
-                        stg.setTitle("Programa");
-                        stg.setScene(scene);
-                        stg.show();
+
 
                     }
                 });
